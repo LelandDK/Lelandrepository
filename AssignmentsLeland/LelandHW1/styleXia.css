@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+img {
+    width: 23%; /* reduced image size to lift it above the horizantal line */
+    height: 23%; /* see comment above */
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right; /* can't figure out how to wrap image within 2nd p */
+}
