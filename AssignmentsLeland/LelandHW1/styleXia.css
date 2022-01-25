@@ -13,3 +13,16 @@ img {
     margin-right: 20px;
     float: right; /* can't figure out how to wrap image within 2nd p */
 }
+
+th {
+    color: white;
+    background-color: black; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td {
+    background-color: rgb(230, 230, 230);
+    padding-left: 10px;
+    padding-right: 10px;
+}
