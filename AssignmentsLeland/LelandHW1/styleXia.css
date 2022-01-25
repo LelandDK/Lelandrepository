@@ -1,3 +1,5 @@
+/* Except for the table, I didn't add color to the text or the background of the body b/c it seems the defaults work */
+
 body {
     font-family: sans-serif;
     font-size: 18px;
