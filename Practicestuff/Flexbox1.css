@@ -1,0 +1,57 @@
+h1 {
+    background-color: indianred;
+}
+
+.big {
+    background-color: lightblue;
+}
+
+.little {
+    background-color:lightgreen;
+}
+
+.multi {
+    background-color: palegoldenrod;
+}
+
+#top {
+    display: flex;
+    gap: 5px
+    
+}
+
+#littleContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+
+    
+}
+
+#multiBox {
+    display:flex;
+    gap: 5px;
+}
+
+p.big {
+    width: 50%;
+    height: 50px;
+}
+
+p.little {
+    
+    }
+
+p.first {
+    font-size: 25px;
+}
+
+p.multi {
+    height: 50px;
+
+}
+
+h1#bottom {
+    border: solid black;
+}
