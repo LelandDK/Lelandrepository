@@ -20,6 +20,7 @@ p {
 }
 
 /* div.haderNav contains h1 and main navigation */
+/* how do I make this section shorter than #headerbottomline? */
 div.headerNav {
   display: flex;
   justify-content: space-between;
@@ -54,6 +55,12 @@ h1 {
   font-family: 'Oswald', sans-serif;
 }
 
+/* Look of links in mainNav */
+.mainNavlook {
+  color: white;
+  text-decoration: none;
+}
+
 #headerbottomline {
   display: flex;
   justify-content: center;
@@ -70,6 +77,11 @@ h1 {
   text-decoration: line-through;
 }
 
+/* how do I create space between the word and the underline? */
+.underline {
+  text-decoration: underline solid #f2ff00;
+  }
+
 /*Middle section */
 .meetMatchmiddle {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg");
@@ -79,7 +91,7 @@ h1 {
 }
 
 .middleText {
-   background-color: #e6e6e6;
+   background-color: rgb(230, 230, 230, 0.85);
    font-family: 'Lato', sans-serif;
    width: 450px;
    float: right;
@@ -93,10 +105,17 @@ h1 {
   display: block;
 }
 
-#middleslastp {
+#middlebutton {
   text-transform: uppercase;
   text-align: center;
   background-color: #f2ff00;
+  border-bottom: 2px solid #ffd900;
+}
+
+/* look of links in bottom nav */
+.linklook {
+  text-decoration: none;
+  color: black;
 }
 
 /*bottom navigation section */
@@ -123,6 +142,8 @@ h1 {
 .button {
   text-align: center;
   background-color: #adadad;
+  border-bottom: 2px solid #808080;
+  border-radius: 5px;
 }
 
   footer {
@@ -130,6 +151,16 @@ h1 {
     color: white;
     font-family: 'lato', sans-serif;
   }
+
+  footer p {
+    padding-left: 15px;
+    font-size: 15px;
+  }
+
+/* Link hover pseudo-class */
+a:hover, .button:hover, #middlebutton:hover {
+  background-color: #d24dff; 
+}
 
 
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
