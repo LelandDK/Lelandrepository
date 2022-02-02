@@ -16,8 +16,14 @@ Use Flex-wrap, flex-direction, and flex to control how the header spaces and siz
 }
 
 .exerciseHeader {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 
 
+}
+
+.exerciseHeader div {
+    
 }
 
 .exerciseHeaderLogo {
@@ -27,10 +33,15 @@ Use Flex-wrap, flex-direction, and flex to control how the header spaces and siz
 
 
 .exerciseHeaderNav {
-
+    
+    
 }
 
 .exerciseHeaderNav ul {
+    list-style: none;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 10px;
 
 }
 
@@ -46,6 +57,9 @@ Use Flex-wrap, flex-direction, and flex to control how the header spaces and siz
 
 
 .exerciseAdditionalFeatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
 
 }
 

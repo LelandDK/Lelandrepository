@@ -11,43 +11,44 @@ p {
   padding: 15px 0;
 }
 
-/*
-body {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg");
-} */
 
 /* .header is top two lines */
 .header {
   display: flex;
   flex-direction: column;
+ 
 }
 
 /* div.haderNav contains h1 and main navigation */
 div.headerNav {
   display: flex;
   justify-content: space-between;
+  background-color: black;
   border-top: 2px solid white;
+  padding-bottom: 15px;
+  
 }
 
 h1 {
-  background-color: black;
-  color: #f2ff00;
+  color: #ffd900;
   font-family: 'Merriweather', serif;
   width: 60%;
   padding-left: 25px;
   padding-top: 5px;
+  
 }
 
 /*mainNav contains the main navigation ul and li */
 .mainNav {
-  background-color: black;
   width: 40%;
   }
 
 /* .mainNav ul contains the main navigation li */
 .mainNav ul {
   display: flex; 
-  justify-content: space-around;
+  gap: 20px;
+  justify-content: flex-end;
+  padding-right: 20px;
    color: white;
   list-style: none;
   font-family: 'Oswald', sans-serif;
@@ -61,32 +62,67 @@ h1 {
   font-size: 150%;
   font-style: italic;
   font-weight: bold;
-  border-top: 2px solid #f2ff00;
+  border-top: 2px solid #ffd900;
+ 
+}
+
+.cross-out {
+  text-decoration: line-through;
 }
 
 /*Middle section */
 .meetMatchmiddle {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg");
-  display: flex;
-  justify-content: flex-end;
+  background-size: cover;
+  height: 1000px;
   
 }
 
 .middleText {
-   background-color: #adadad;
+   background-color: #e6e6e6;
    font-family: 'Lato', sans-serif;
-   width: 20%;
+   width: 450px;
+   float: right;
+   margin-top: 250px;
+   margin-right: 15px;
+   padding: 55px 55px 55px 55px;
    
-  
+}
+
+.middleText p {
+  display: block;
+}
+
+#middleslastp {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f2ff00;
 }
 
 /*bottom navigation section */
 .bottomNav ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   list-style: none;
   font-family: 'Merriweather', serif;
 
+}
+
+#bottomNavmid {
+  border-left: 1px solid #bfbfbf;
+  border-right: 1px solid #bfbfbf;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+}
+
+#bottomNavbottom {
+  margin-right: 40px;
+}
+
+.button {
+  text-align: center;
+  background-color: #adadad;
 }
 
   footer {
