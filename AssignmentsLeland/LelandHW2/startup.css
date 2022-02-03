@@ -77,7 +77,6 @@ h1 {
   text-decoration: line-through;
 }
 
-/* how do I create space between the word and the underline? */
 .underline {
   text-decoration: underline solid #f2ff00;
   }
