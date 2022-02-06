@@ -1,0 +1,23 @@
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: min-content min-content;
+   column-gap: 50px;
+    
+}
+.container1 p {
+    background-color:cyan;
+}
+
+
+.c3 {
+     display: grid;
+    grid-template-columns: [Maxine] max-content [max-factor] max-content;
+    grid-template-rows: 100px 100px 100px;
+    column-gap: 50px;
+}
+
+.c3 p {
+    background-color: khaki;
+}
