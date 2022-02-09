@@ -1,0 +1,81 @@
+body {
+    font-family:"lato";
+}
+
+/* contains img.logo and nav*/
+header {
+    background-color: #20c063; 
+    display: flex;
+}
+
+img.logo {
+    padding-left: 10px;
+  }
+
+
+
+/*contains buyrentNav savedNav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+
+.buyrentNav {
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 10px;
+}
+
+.savedNav {
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 10px;
+    padding-right: 10px;
+    } 
+/* end of header */
+
+
+/* beginning of main */
+/* second line */
+#secondRow {
+    display: flex;
+}
+
+#secondRow h1 {
+    margin-left: 15px;
+}
+
+#secondRow h2 {
+    margin-left: 15px;
+
+}
+
+/* contains houseCells */
+.homeListings {
+    background-color:#e8e9ea;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    
+}
+
+/* contains img and houseDetails*/
+.houseCell {
+    display: grid;
+    grid-template-rows: 480px 240px; /* I thought this would set each cells row height so pics would be the same size */
+    
+
+}
+
+/* unordered list which also contains icon flexbox*/
+.houseDetails {
+    list-style: none;
+    padding-left: 0; /*https://www.geeksforgeeks.org/how-to-remove-indentation-from-an-unordered-list-item-using-css/*/
+}
+
+.bedandbathicons {
+    display: flex;
+}
+
