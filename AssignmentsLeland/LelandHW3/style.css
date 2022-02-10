@@ -2,6 +2,20 @@ body {
     font-family:"lato";
 }
 
+/* Change anchor tag styles throughout document*/
+a {
+    text-decoration: none;
+    color: #20c063;
+}
+
+/* change anchor tag text-color of white letters */
+a.white {
+    color: white;
+}
+
+
+/* change anchor tag text-color of black letters */
+
 /* contains img.logo and nav*/
 header {
     background-color: #20c063; 
@@ -10,14 +24,13 @@ header {
 
 img.logo {
     padding-left: 10px;
-  }
-
-
+}
 
 /*contains buyrentNav savedNav */
 nav {
     display: flex;
     justify-content: space-between;
+    flex-grow: 2;
     }
     
 
@@ -25,18 +38,24 @@ nav {
     display: flex;
     list-style: none;
     color: white;
-    gap: 10px;
+    gap: 15px;
 }
 
 .savedNav {
     display: flex;
     list-style: none;
     color: white;
-    gap: 10px;
+    gap: 15px;
     padding-right: 10px;
     } 
-/* end of header */
 
+/*Circled J*/
+.savedNav li span {
+    border: 2px solid white;
+    border-radius: 50%; /*how do i make a circle */
+    padding: 5px;
+    }
+/* end of header */
 
 /* beginning of main */
 /* second line */
@@ -44,13 +63,20 @@ nav {
     display: flex;
 }
 
-#secondRow h1 {
-    margin-left: 15px;
+/* change font-size of h1 and h2 */
+#secondRow h1, #secondRow h2 {
+    font-size: 1em;
 }
 
+/* unbold h2 and give left margin */
 #secondRow h2 {
-    margin-left: 15px;
+    font-weight: normal;
+    margin-left: 10px;
+}
 
+/* Add larger left margin to h1 */
+#secondRow h1 {
+    margin-left: 30px;
 }
 
 /* contains houseCells */
@@ -59,23 +85,183 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
     
+    
 }
 
 /* contains img and houseDetails*/
 .houseCell {
     display: grid;
-    grid-template-rows: 480px 240px; /* I thought this would set each cells row height so pics would be the same size */
-    
-
-}
+    grid-template-rows: 350px 150px; 
+    overflow: hidden;
+    }
 
 /* unordered list which also contains icon flexbox*/
-.houseDetails {
+ul.houseDetails {
+    background-color: white; 
     list-style: none;
-    padding-left: 0; /*https://www.geeksforgeeks.org/how-to-remove-indentation-from-an-unordered-list-item-using-css/*/
+    padding-left: 10px; 
+    margin-top: 0px;
+   }
+
+/* Add top padding to home price and making font bold */
+.homePrice {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+/* Add bottom margins to houseDetails items */
+.homePrice, .bedandbathicons {
+    margin-bottom: 5px;
+}
+
+
+/* Add right and left margins around first column details items */
+.detailsHouse1, .detailsHouse4, .detailsHouse7, .detailsHouse10 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Add right and left margins around third column details items */
+.detailsHouse3, .detailsHouse6, .detailsHouse9, .detailsHouse12 {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .bedandbathicons {
     display: flex;
+    align-items: end;
+    gap: 15px;
 }
 
+
+/* home images */
+/* all home images */
+
+.image {
+    background-size: cover;
+    margin-top: 15px;
+    
+}
+
+/* Add right and left and right margins on first coulumn image items */
+.imageHouse1, .imageHouse4, .imageHouse7, .imageHouse10 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*Add right and left margins on third column image items */
+.imageHouse3, .imageHouse6, .imageHouse9, .imageHouse12 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* change color of addresses */
+address {
+    color: #929ba0;
+    font-style: normal;
+}
+
+/* individual home images */
+.imageHouse1 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg");
+}
+
+.imageHouse2 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg");
+}
+
+.imageHouse3 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg");
+}
+
+.imageHouse4 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg");
+}
+
+.imageHouse5 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg");
+}
+
+.imageHouse6 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg");
+}
+
+.imageHouse7 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg");
+}
+
+.imageHouse8 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg");
+}
+
+.imageHouse9 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg");
+}
+
+.imageHouse10 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg");
+}
+
+.imageHouse11 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg");
+}
+
+.imageHouse12 {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg");
+}
+/* End of main */
+
+/*Beginning of bottomNav */
+
+.bottomNav {  /*contains page and geography navs */
+    display: flex;
+    flex-direction: column;
+}
+
+.pageNav, .geographyNav {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+}
+
+.bottomNav div {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+/* End of bottomNv  */
+
+/*Beginning of Insight Section */
+article.insightSection {
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* Beginning of Footer */
+footer {
+    background-color: #3b4144;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+
+/*contains small */
+.smallPrint {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer small {
+    color: #e8e9ea; 
+         
+}

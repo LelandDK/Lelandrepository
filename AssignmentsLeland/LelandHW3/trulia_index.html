@@ -14,21 +14,22 @@
 <body>
 
 <header>
-    <img class="logo" src="images/logo.svg" alt="Trulia logo">
+    <a href="#"><img class="logo" src="images/logo.svg" alt="Trulia logo" width="100"></a>
      
     <nav>
         <ul class="buyrentNav">
-            <li>Buy</li>
-            <li>Rent</li>
-            <li>Mortgage</li>
-            <li>Local</li>
-            <li>Scoop</li>
+            <li><a href="#" class="white">Buy</a></li>
+            <li><a href="#" class="white">Rent</a></li>
+            <li><a href="#" class="white">Mortgage</a></li>
+            <li><a href="#" class="white">Local</a></li>
+            <li><a href="#" class="white">Scoop</a></li>
         </ul>
             
         <ul class="savedNav">
-            <li>Saved Homes</li>
-            <li>Saved Searches</li>
-            <li>jsir</li>  <!--There's a j in a circle.  How do I do that?-->
+            <li><a href="#" class="white">Saved Homes</a></li>
+            <li><a href="#" class="white">Saved Searches</a></li>
+            <li> <a href="#" class="white"><span>J</span></a></li>
+            <li><a href="#" class="white">jsir</a></li>
         </ul>
     </nav>
    
@@ -42,9 +43,9 @@
 
     <section class="homeListings">
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg" alt="picture of apartment">
-            <ul class="houseDetails">
-                <li>$475,000</li>
+            <div class= "image imageHouse1"></div>
+            <ul class="houseDetails detailsHouse1">
+                <li class="homePrice">$475,000 <img src="images/up-sign.svg" width="12.5"></li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">2bd</div>
@@ -57,9 +58,9 @@
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg" alt="picture of apartment">
+            <div class=" image imageHouse2"></div>
             <ul class="houseDetails">
-                <li>$774,900</li>
+                <li class="homePrice">$774,900</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">2bd</div>
@@ -72,9 +73,9 @@
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg" alt="picture of house">
-            <ul class="houseDetails">
-                <li>$600,000</li>
+            <div class="image imageHouse3"></div>
+            <ul class="houseDetails detailsHouse3">
+                <li class="homePrice">$600,000</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">3bd</div>
@@ -87,14 +88,14 @@
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg" alt="picture of apartment">
-            <ul class="houseDetails">
-                <li>$630,000</li>
+            <div class="image imageHouse4"></div>
+            <ul class="houseDetails detailsHouse4">
+                <li class="homePrice">$630,000</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">2bd</div>
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png">3ba</div>
-                    <div>1500 sqft</div>
+                    <div>1,500 sqft</div>
                     </li>
 
                 <li><address>3221 Warder St NW #1<br>Pleasant Plains, Washington, DC</address></li>
@@ -102,9 +103,9 @@
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg" alt="picture of house">
+            <div class="image imageHouse5"></div>
             <ul class="houseDetails">
-                <li>$1,295,000</li>
+                <li class="homePrice">$1,295,000</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">9bd</div>
@@ -117,14 +118,14 @@
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg" alt="picture of house">
-            <ul class="houseDetails">
-                <li>$1,049,000</li>
+            <div class="image imageHouse6"></div>
+            <ul class="houseDetails detailsHouse6">
+                <li class="homePrice">$1,049,000</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">6bd</div>
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png">4ba</div>
-                    <div>2688 sqft</div>
+                    <div>2,688 sqft</div>
                     </li>
 
                  <li><address>1363 Oak St NW<br>Columbia Heights, Washington, DC</address></li>
@@ -132,14 +133,14 @@
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg" alt="picture of apartment">
-            <ul class="houseDetails">
-                <li>$720,000</li>
+            <div class="image imageHouse7"></div>
+            <ul class="houseDetails detailsHouse7">
+                <li class="homePrice">$720,000</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">3bd</div>
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png">3ba</div>
-                    <div>1850 sqft</div>
+                    <div>1,850 sqft</div>
                     </li>
 
                 <li><address>1307 Irving St NW #1<br>Columbia Heights, Washington, DC</address></li>
@@ -147,14 +148,14 @@
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg" alt="picture of house">
+            <div class="image imageHouse8"></div>
             <ul class="houseDetails">
-                <li>$760,000</li>
+                <li class="homePrice">$760,000</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">3bd</div>
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png">3ba</div>
-                    <div>1920 sqft</div>
+                    <div>1,920 sqft</div>
                     </li>
                
                 <li><address>752 Park Rd NW<br>Columbia Heights, Washington, DC</address></li>
@@ -162,39 +163,39 @@
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg" alt="picture of house">
-            <ul class="houseDetails">
-                <li>$760,000</li>
+            <div class="image imageHouse9"></div>
+            <ul class="houseDetails detailsHouse9">
+                <li class="homePrice">$760,000</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">3bd</div>
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png">3ba</div>
-                    <div>1920 sqft</div>
+                    <div>1,715 sqft</div>
                     </li>
 
-                <li><address>752 Park Rd NW<br>Columbia Heights, Washington, DC</address></li>
+                <li><address>2932 Vernon Pl NW #1<br>Columbia Heights, Washington, DC</address></li>
             </ul>
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg" alt="picture of apartment">
-            <ul class="houseDetails">
-                <li>$999,000</li>
+            <div class="image imageHouse10"></div>
+            <ul class="houseDetails detailsHouse10">
+                <li class="homePrice">$999,000</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">2bd</div>
-                    <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png">4ba</div>
-                    <div>2395 sqft</div>
+                    <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bath-icon.png">2ba</div>
+                    <div>715 sqft</div>
                     </li>
 
-                <li><address>3511 17th ST NW #7<br>Mount Pleasant, Washington, DC</address></li>
+                <li><address>3205 Georgia Ave NW #403<br>Pleasant Plains, Washington, DC</address></li>
             </ul>
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg" alt="picture of apartment">
+            <div class="image imageHouse11"></div>
             <ul class="houseDetails">
-                <li>$474,500</li>
+                <li class="homePrice">$474,500</li>
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">2bd</div>
@@ -207,9 +208,10 @@
         </article> <!--grid cell end-->
 
         <article class="houseCell"> <!--grid cell start-->
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg" alt="picture of apartment">
-            <ul class="houseDetails">
-                <li>$399,000</li>
+            <div class="image imageHouse12"></div>
+            <ul class="houseDetails detailsHouse12">
+                <li class="homePrice">$399,000</li>
+                
 
                 <li class="bedandbathicons">
                     <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/bed-icon.png">1bd</div>
@@ -224,29 +226,59 @@
     </section>
 
     <section class="bottomNav">
+        <ul class="pageNav">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">></a></li>
+        </ul>
 
-        1 2 3 4 >
-1 - 30 of 79 Results
-United States > District Of Columbia > Washington > 20010
+        <div>
+            <p>1 - 30 of 79 Results</p>
+        </div>
 
+        <ul class="geographyNav">
+            <li><a href="#">United States</a></li>
+            <li>></li>
+            <li><a href="#">District Of Columbia</a></li>
+            <li>></li>
+            <li><a href="#">Washington</a></li>
+            <li>></li>
+            <li>20010</li>
+        </ul>
 
-    </section>
+       </section>
 </main>
 
-
-
 <!--Insights Section-->
-<article>
+<article class="insightSection">
     <h2>20010 Real Estate Insights</h2>
     <p>ZIP code 20010 is located in Washington, District of Columbia.</p>
 
-    <p>The plethora of grocery stores in ZIP code 20010 makes it easy to stock up on specialty foods, like organic and gluten-free options, without having to leave the area. There is easy access to public transportation [https://www.trulia.com/real_estate/20010-Washington/], which is the preferred way to travel here due to its ease of use and abundant travel options. Bicycles are big sellers in ZIP code 20010; everyone seems to be riding these days, whether it's for the daily commute or a fun afternoon with the family.</p>
+    <p>The plethora of grocery stores in ZIP code 20010 makes it easy to stock up on specialty foods, like organic and gluten-free options, without having to leave the area. There is <a href="https://www.trulia.com/real_estate/20010-Washington/">easy access to public transportation</a>, which is the preferred way to travel here due to its ease of use and abundant travel options. Bicycles are big sellers in ZIP code 20010; everyone seems to be riding these days, whether it's for the daily commute or a fun afternoon with the family.</p>
 
-    <p>Many houses in ZIP code 20010 are historic with one-of-a-kind architecture, and it's clear to see why it's so important to maintain them and keep history living on. This year, the average listing price grew to $658,471  in this locale, a noticeable appreciation of 12.5 percent from $585,528 the year prior. During the same period, inventory is noticeably increasing in this locale year-over-year, with a 20 percent increase in for-sale listings last year alone. Enjoy a cozy night by the fire, as many residences here come equipped with authentic fireplaces. ZIP code 20010 has some great historic estates so if you move to one of these homes, you'll be inheriting a piece of history. If you enjoy a view and the ability to see far and wide, consider a penthouse in this place [https://www.trulia.com/for_sale/20010_zip/penthouse_keyword/] for an unparalleled experience.</p>
+    <p>Many houses in ZIP code 20010 are historic with one-of-a-kind architecture, and it's clear to see why it's so important to maintain them and keep history living on. This year, the average listing price grew to $658,471  in this locale, a noticeable appreciation of 12.5 percent from $585,528 the year prior. During the same period, inventory is noticeably increasing in this locale year-over-year, with a 20 percent increase in for-sale listings last year alone. Enjoy a cozy night by the fire, as many residences here come equipped with authentic fireplaces. ZIP code 20010 has some great historic estates so if you move to one of these homes, you'll be inheriting a piece of history. If you enjoy a view and the ability to see far and wide, <a href="https://www.trulia.com/for_sale/20010_zip/penthouse_keyword/">consider a penthouse in this place</a> for an unparalleled experience.</p>
+
 </article>
 
 <footer>
+    <ul>
+        <li><a href="#" class="white">About Trulia</a></li>
+        <li><a href="#" class="white">About Zillow Group</a></li>
+        <li><a href="#" class="white">Careers</a></li>
+        <li><a href="#" class="white">Investor Relations</a></li>
+        <li><a href="#" class="white">Advertising Terms</a></li>
+        <li><a href="#" class="white">Privacy Terms of Use</a></li>
+        <li><a href="#" class="white">Listings Quality Policy</a></li>
+        <li><a href="#" class="white">Subscription Terms</a></li>
+        <li><a href="#" class="white">Ad Choices</a></li>
+        <li><a href="#" class="white">Help</a></li>
+    </ul>
 
+    <div class="smallPrint">
+        <small>&copy 2018 Trulia, LLC. All rights reserved. Equal Housing Opportunity.</small>
+    </div>
 </footer>
 
 
