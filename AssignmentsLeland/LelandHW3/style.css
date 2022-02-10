@@ -45,15 +45,20 @@ nav {
     display: flex;
     list-style: none;
     color: white;
-    gap: 15px;
+    gap: 10px;
     padding-right: 10px;
     } 
 
 /*Circled J*/
 .savedNav li span {
     border: 2px solid white;
-    border-radius: 50%; /*how do i make a circle */
-    padding: 5px;
+    border-radius: 50%; 
+    padding-top: 5px; /*I made the circle by decreasing padding in top and bottom and increeasing in right and left */
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
     }
 /* end of header */
 
@@ -85,8 +90,11 @@ nav {
     background-color:#e8e9ea;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-     
-    
+            
+}
+/* Isn't .homelistings article selecting the same elements as .houseCell? */
+.homeListings article {
+    border-radius: 10px; /*Why are only the middle column cells rounding and why don't the corners look more rounded? */
 }
 
 /* contains img and houseDetails*/
@@ -94,7 +102,7 @@ nav {
     display: grid;
     grid-template-rows: 350px 150px; 
     overflow: hidden;
-    border-radius: 30px; /*Why are only the middle column cells rounding and why don't the corners look more rounded? */
+         
     }
 
 /* unordered list which also contains icon flexbox*/
@@ -242,7 +250,7 @@ address {
     display: flex;
     justify-content: center;
     margin-left: 40px;
-    color: #929ba0;
+    color: #929ba0; /* This is a grey I chose.  I tried both the light grey and dark grey provided, but the provided light grey color was almost invisble against the white background and the provided dark grey color looked almost black.  Is there a reason why the provided colors didn't render well in my browser? */
     font-size: 14px;
 }
 
@@ -284,7 +292,7 @@ footer ul {
 }
 
 footer small {
-    color: #e8e9ea; 
+    color: #e8e9ea; /*This is the light gray color provided, but as you can see, it looks almost white in the rendered site.  Not sure why */
     font-size: 10px;
          
 }
