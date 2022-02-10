@@ -24,6 +24,7 @@ header {
 
 img.logo {
     padding-left: 10px;
+    padding-top: 15px;
 }
 
 /*contains buyrentNav savedNav */
@@ -31,9 +32,8 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-grow: 2;
-    }
+}
     
-
 .buyrentNav {
     display: flex;
     list-style: none;
@@ -61,11 +61,12 @@ nav {
 /* second line */
 #secondRow {
     display: flex;
+    margin-top: 30px;
 }
 
 /* change font-size of h1 and h2 */
 #secondRow h1, #secondRow h2 {
-    font-size: 1em;
+    font-size: 14px;
 }
 
 /* unbold h2 and give left margin */
@@ -84,7 +85,7 @@ nav {
     background-color:#e8e9ea;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    
+     
     
 }
 
@@ -93,6 +94,7 @@ nav {
     display: grid;
     grid-template-rows: 350px 150px; 
     overflow: hidden;
+    border-radius: 30px; /*Why are only the middle column cells rounding and why don't the corners look more rounded? */
     }
 
 /* unordered list which also contains icon flexbox*/
@@ -101,7 +103,7 @@ ul.houseDetails {
     list-style: none;
     padding-left: 10px; 
     margin-top: 0px;
-   }
+}
 
 /* Add top padding to home price and making font bold */
 .homePrice {
@@ -115,16 +117,15 @@ ul.houseDetails {
 }
 
 
-/* Add right and left margins around first column details items */
-.detailsHouse1, .detailsHouse4, .detailsHouse7, .detailsHouse10 {
+/* Add right and left margins around first and third column details items */
+.detailsHouse1, .detailsHouse3, .detailsHouse4, .detailsHouse6, .detailsHouse7, .detailsHouse9, .detailsHouse10, .detailsHouse12 {
     margin-left: 15px;
     margin-right: 15px;
 }
 
-/* Add right and left margins around third column details items */
-.detailsHouse3, .detailsHouse6, .detailsHouse9, .detailsHouse12 {
-    margin-left: 15px;
-    margin-right: 15px;
+/* Elminate bottom margins from first through third rows */
+.detailsHouse1, .detailsHouse2, .detailsHouse3, .detailsHouse4, .detailsHouse5, .detailsHouse6, .detailsHouse7, .detailsHouse8, .detailsHouse9 {
+    margin-bottom: 0px;
 }
 
 .bedandbathicons {
@@ -132,7 +133,6 @@ ul.houseDetails {
     align-items: end;
     gap: 15px;
 }
-
 
 /* home images */
 /* all home images */
@@ -169,7 +169,18 @@ address {
 .imageHouse2 {
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg");
 }
+/* Text "new" in upper left corner of imageHouse2 */
+.imageHouse2 p {
+    background-color: #20c063;
+    color: white; 
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-right: 89%;
+    padding-left: 5px;
+    border-radius: 4px;
+    }
 
+    /*More individual home images */
 .imageHouse3 {
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg");
 }
@@ -223,12 +234,16 @@ address {
     list-style: none;
     gap: 10px;
     justify-content: center;
+    font-size: 14px;
 }
 
+/*1- 30 of 79 Results */
 .bottomNav div {
     display: flex;
     justify-content: center;
     margin-left: 40px;
+    color: #929ba0;
+    font-size: 14px;
 }
 
 /* End of bottomNv  */
@@ -236,8 +251,16 @@ address {
 /*Beginning of Insight Section */
 article.insightSection {
     margin-left: 25px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 50px;
+}
+
+article.insightSection h2 {
+    font-size: 1.5em;
+}
+
+article.insightSection p {
+    font-size: 14px;
 }
 
 
@@ -251,8 +274,7 @@ footer ul {
     list-style: none;
     gap: 15px;
     padding-left: 20px;
-    padding-top: 10px;
-    
+    padding-top: 20px;
 }
 
 /*contains small */
@@ -263,5 +285,6 @@ footer ul {
 
 footer small {
     color: #e8e9ea; 
+    font-size: 10px;
          
 }
