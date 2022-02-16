@@ -7,8 +7,8 @@ let ballEl = document.querySelector('.js-ball');
 let scoreEl = document.querySelector('.js-score');
 
 
-/* At start of the game, set scoreE1's inner HTML to 0. */ 
-/* Have document listen for when document completes loading and then set scoreE1's inner HTML to 0.*/
+/* At start of the game, set scoreE1's inner text to 0. */ 
+/* Have document listen for document to complete loading and then set scoreE1's inner text to 0.*/
 
 /*Add DOMContentLoaded event to the document object */
 document.addEventListener("DOMContentLoaded", setScoretoZero);
@@ -17,17 +17,16 @@ document.addEventListener("DOMContentLoaded", setScoretoZero);
 
 function setScoretoZero() {
   scoreEl.innerText = score;
-
 }
 
 /* Have js-ball listen for click.  Then increase "score" by 10 each time ball is clicked and assign scoreE1's inner text to "score" each time ball is clicked */
 
-/*Add event listener to ballE1 with two functions (https://www.w3schools.com/js/js_htmldom_eventlistener.asp) */
+/*Add event listener to ballE1 with two handlers (functions) (https://www.w3schools.com/js/js_htmldom_eventlistener.asp) */
 
 ballEl.addEventListener("click", upScore); /*changes value of variable "score" */
 
 ballEl.addEventListener("click", increaseElScore);
-/* Assigns scoreE1's innerText value to "score." */
+/* Assigns scoreEl's innerText value to "score." */
 
 /*Declare and define upScore and increaseElScore functions used above */ 
 
@@ -45,7 +44,7 @@ function increaseElScore () {
 /*The addEventListener syntax does not permit me to add a handler that is a conditional.  I only can add a handler that's a function. */
 
 /* Thus, I must put the condition (I want applied when the ball is clicked) into a function*/
-ballEl.addEventListener("click", compareToWin)
+ballEl.addEventListener("click", compareToWin);
 
 /*Now, I must create the function I identified in the addEventListener statement (above). */
 
