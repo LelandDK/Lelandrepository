@@ -29,10 +29,3 @@ document.querySelector("#whiteButton").addEventListener("click",turnItLight);
 var titleH1 = document.getElementById("heading");
 
 
-let x = 5;
-
-var equation = 10*10;
-
-const person = "Me, myself, and I";
-
-console.log(person);
