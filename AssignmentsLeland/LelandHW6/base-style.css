@@ -158,7 +158,7 @@ a {
   
 .trulia-nav-toggle {
   display:none;
-}
+} 
 
 
 
@@ -217,7 +217,6 @@ a {
 
 }
 
-
 .trulia-grid-item {
   background-color: white;
   border-radius: 5px;
@@ -226,8 +225,171 @@ a {
   height: 260px;
 }
 
+/* Leland's changes: start */
+
+/*TRULIA HOME LISTINGS*/
+  /*Change number of grid columns depending on viewport size and change size of featured element*/
+
+  @media screen and (max-width: 767px) {
+    /*change grid to two column layout */
+    .trulia-grid {
+       grid-template-columns: 1fr 1fr;
+ 
+  }
+    /*Double featured item size to 2fr */
+   .trulia-featured-grid-item {
+      grid-column: span 2;
+  }
+    
+}
 
 
+  @media screen and (min-width: 768px) {
+    /*change grid to three column layout */
+    .trulia-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+    /*Double featured item's flexbox size to 2 fr column and rows */
+    .trulia-featured-grid-item {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  
+    /* Let height of (featured) ITEM expand to fill flexbox*/
+   .trulia-grid-item {
+      height: auto;
+    /*Move house facts to bottom of flexbox */
+     justify-content: space-between;
+   }
+
+  
+}
+
+
+  @media screen and (min-width: 1200px) {
+    /* change grid to four column layout */
+    .trulia-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+   /*Double featured item's flexbox size to 2 fr column and rows */
+   .trulia-featured-grid-item {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  
+  /* Let height of (featured) ITEM expand to fill flexbox*/
+  .trulia-grid-item {
+      height: auto;
+    /*Move house facts to bottom of flexbox */
+     justify-content: space-between;
+   }
+
+  
+}
+
+
+  @media screen and (min-width: 1600px) {
+   /*change grid to six column layout */
+   .trulia-grid {
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+   /*Double featured item's flexbox size to 2 fr column and rows */
+   .trulia-featured-grid-item {
+     grid-column: span 2;
+     grid-row: span 2;
+     
+  }
+  
+  /* Let height of (featured) ITEM expand to fill flexbox*/
+  .trulia-grid-item {
+     height: auto;
+    
+    /*Move house facts to bottom of flexbox */
+    justify-content: space-between;
+    
+  }
+
+  
+}
+
+
+  /*Add pointer to trulia-grid-items to cue user to click on items.*/
+  .trulia-grid-item {
+    cursor: pointer;
+    transition: 0.15s ease-out;
+  }
+
+  .trulia-featured-grid-item .trulia-house-image {
+    height: 85%;
+
+  }
+  
+  /*Add transition to featured item.  Syntax: transition: <property> <duration> <timing-function> <delay>; - from - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+  /*
+  .trulia-grid-item {
+     transition: 0.15s ease-out; 
+  }*/
+  /* why isn't this working?  And why am I putting on the grid-item instead of the featured-grid-item? */
+
+
+/*MAIN NAVIGATION for smaller viewport sizes */
+  /* Change navigation view when vieport is < 1025px */
+
+  @media screen and (max-width: 1024px) {
+
+   /* Change nav height from fixed height to one that grows with size of content */ 
+    .trulia-nav {
+      height: auto;
+      display: block;
+  }
+
+   /*Create grid for nav-left container so that I can place burger element exactly where I want it */
+   .trulia-nav-left {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+  }
+
+  /* Keep logo size from growning bigger than 80 px */
+    .trulia-nav-logo {
+      max-width: 80px; 
+  }
+ 
+
+  .trulia-nav-mobilehide {
+  /*Get nav items to stack */
+    width: 0; 
+      
+  /*Get rid of space between nav-left and nav-right elements */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+  /*hide nav */
+  height: 0;
+  }
+
+  /* Add space between list elements */
+  .trulia-nav-item {
+    margin-bottom: 15px;
+  }
+
+  /* Turn on burger symbol (which is hidden by CSS ruleset above), change color of grid, and place burger in sixth grid area */
+  .trulia-nav-toggle {
+    display: block;
+    color: white;
+    grid-column-start: 6;
+    grid-column-end: 7;
+
+    /* move burger item to the right-side of grid cell #6 */
+    justify-self: end;
+    padding: 10px;
+  }
+
+}
+
+/* Leland's changes: end */
 
 
 .new-box {

@@ -5,16 +5,18 @@
 
 .exerciseMain {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
 
 }
 
 .exerciseMainContent {
+    grid-column: 2/span 4;
 
 
 }
 
-.exerciseMainAside {
-
+.exerciseMain :last-child {
+    grid-column-start: 6;
+    grid-column-end: 7;
 }
