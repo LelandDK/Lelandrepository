@@ -20,22 +20,24 @@
     <header class="primaryNav">
         <div class="LogoLarge"><!--in CSS, set as background-image-->
             <nav>
-                <a class="mobileMenuLink" href="#">Menu</a> <!--add link when you get this-->
+                <div class="mobileMenuLink-grid-container"> <!--container added so MenuLink in a-tag can be positioned easily-->
+                    <a class="mobileMenuLink" href="#">Menu</a> <!--add link when you get this-->
+                </div>
 
                 <!--This nav menu should be hidden until "Menu" above is clicked-->
-                <div class="LogoSmall"></div> <!--header section of pop-up menu-->
+                <div class="LogoSmall"></div> <!--header section of pop-up menu  THIS HAS NOT BEEN ADDED YET IN CSS-->
                    
         </div> <!--background logo end-->
 
                 <!--will need JS and CSS to toggle this-->
-            <div class="mobileNavHide">
-                <a class="X-out" href="#">X</a>
+                <div class="mobileNavHide">
+                    <a class="X-out" href="#">X</a>
 
-                <ul class="popMenu"> 
-                    <li><a id="homePageLink" href="#">Home</a></li> <!--Add in link when you have it-->
-                    <li><a id="homePageLink" href="#">Biography</a></li>
-                    <li><a id="homePageLink" href="#">Galleries</a></li>
-                    <li><a id="homePageLink" href="#">Contact</a></li>
+                    <ul class="mobileNavHide-Links"> 
+                        <li><a class="homePageLink" href="#">Home</a></li> <!--Add in link when you have it-->
+                        <li><a class="biographyLink" href="#">Biography</a></li>
+                        <li><a class="galleriesLink" href="#">Galleries</a></li>
+                        <li><a class="contactLink" href="#">Contact</a></li>
                 </ul>
             </div>
           </nav>
@@ -47,7 +49,7 @@
     <div class="mainFootBackround">
         <main class="mobileMainGrid"> <!--CSS Grid three rows & Display:block for desktop-->
             <!--Do I need a white background here or make double border?-->
-            <img src="/AssignmentsLeland/LelandFinal/Images/Y-02 Dead Jeffrey Pine on Sentinel Dome, Yosemite.jpg">
+            <img src="#">
             <img src="#">
             <img src="#">
         

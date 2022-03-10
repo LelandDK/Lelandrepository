@@ -1,33 +1,55 @@
 /* Mobile First */
 
-/*Header*/
-a {  /*get rid of underline on all links */
+a {  /*get rid of underline on all links on page */
     text-decoration: none;
 }
 
+/*Header*/
+
 .LogoLarge {
-   background-image: url("../Logos/BKLogoLarge.jpg");
-    /* This image worked url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg") */
+    background-image: url("../Logos/BKLogoLarge.jpg");
     background-size:cover;
-    height: 200px;
+    height: 200px; /*This is a placeholder height; it will need to be changed */
+}
+
+/*This container permits me to easily position the mobileMenuLink */
+.mobileMenuLink-grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.mobileMenuLink {
+    font-family: "caveat";
+    font-size: 1.5rem;
+    font-weight: bold;
+    grid-row: 5 / 6;
+    place-self: end; 
+    margin-right: 10px; 
 }
 
 .mobileNavHide {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #EBF4FE;
+    background-color: yellow; /*This is a place holder color so I can see the menu.  It's real color is #EBF4FE  */
         
 }
+/*This is the x-out targeted by location and not by class name */
+.mobileNavHide a {
+    place-self: end; 
+    margin-top: 5px;
+    margin-right: 10px;
+}
 
-.mobileNavHide li {
-    font-family:Arial, Helvetica, sans-serif;
-    place-self: center;
-    }
-
-.popuMenu {
+.mobileNavHide-Links {
     display: grid;
     grid-template-columns: 1fr;
     list-style: none; 
+    padding-left: 0;
+}
+
+.mobileNavHide-Links li {
+    font-family: Arial, Helvetica, sans-serif;
+    place-self: center;
 }
 
 
