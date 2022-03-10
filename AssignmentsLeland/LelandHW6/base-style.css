@@ -108,6 +108,10 @@ a {
   text-decoration: none;
   color: #3a8e52;
 }
+.trulia-featured-grid-item {
+  transition: 1s ease-out;
+}
+
 
 /* Navigation */
 .trulia-nav {
@@ -300,6 +304,7 @@ a {
    .trulia-featured-grid-item {
      grid-column: span 2;
      grid-row: span 2;
+     transition: 0.15s ease-out;
      
   }
   
@@ -313,14 +318,14 @@ a {
   }
 
   
-}
+  }
 
 
   /*Add pointer to trulia-grid-items to cue user to click on items.*/
   .trulia-grid-item {
     cursor: pointer;
-    transition: 0.15s ease-out;
-  }
+   
+      }
 
   .trulia-featured-grid-item .trulia-house-image {
     height: 85%;

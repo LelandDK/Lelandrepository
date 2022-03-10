@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <title>LelandFinalProject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="normalizeStyleSheet" href="css/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/LelandFinalCss.css">
+</head>
+
+<body>
+
+    <header class="primaryNav">
+        <div class="LogoLarge"><!--in CSS, set as background-image-->
+            <nav>
+                <a class="mobileMenuLink" href="#">Menu</a> <!--add link when you get this-->
+
+                <!--This nav menu should be hidden until "Menu" above is clicked-->
+                <div class="LogoSmall"></div> <!--header section of pop-up menu-->
+                   
+        </div> <!--background logo end-->
+
+                <!--will need JS and CSS to toggle this-->
+            <div class="mobileNavHide">
+                <a class="X-out" href="#">X</a>
+
+                <ul class="popMenu"> 
+                    <li><a id="homePageLink" href="#">Home</a></li> <!--Add in link when you have it-->
+                    <li><a id="homePageLink" href="#">Biography</a></li>
+                    <li><a id="homePageLink" href="#">Galleries</a></li>
+                    <li><a id="homePageLink" href="#">Contact</a></li>
+                </ul>
+            </div>
+          </nav>
+       
+    </header>
+
+
+  <!--main and footer-->  
+    <div class="mainFootBackround">
+        <main class="mobileMainGrid"> <!--CSS Grid three rows & Display:block for desktop-->
+            <!--Do I need a white background here or make double border?-->
+            <img src="/AssignmentsLeland/LelandFinal/Images/Y-02 Dead Jeffrey Pine on Sentinel Dome, Yosemite.jpg">
+            <img src="#">
+            <img src="#">
+        
+        </main>
+
+        <footer>
+            <ul class="footerFlexbox">
+                <li>&copy 2022</li>
+                <li>Robert Kiang</li>
+                <li>|</li>
+                <li>All Rights Reserved</li>
+
+            </ul>
+
+
+        </footer>
+    </div> <!--mainFootBackground wraps around main and footer-->
+
+
+
+    <script src="JS/LelandFinalJS.js" charset="utf-8"></script>
+</body>
+</html>

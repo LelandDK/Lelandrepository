@@ -1,0 +1,53 @@
+/* Mobile First */
+
+/*Header*/
+a {  /*get rid of underline on all links */
+    text-decoration: none;
+}
+
+.LogoLarge {
+   background-image: url("../Logos/BKLogoLarge.jpg");
+    /* This image worked url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg") */
+    background-size:cover;
+    height: 200px;
+}
+
+.mobileNavHide {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #EBF4FE;
+        
+}
+
+.mobileNavHide li {
+    font-family:Arial, Helvetica, sans-serif;
+    place-self: center;
+    }
+
+.popuMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none; 
+}
+
+
+/*Main */
+.mainFootBackround {
+    background-color: #EBF4FE;
+}
+
+
+/*Footer */
+.footerFlexbox {
+    display: flex;
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.footerFlexbox li {
+    margin-left: 2px;
+    margin-right: 2px;
+}
