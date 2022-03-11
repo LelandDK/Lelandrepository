@@ -6,10 +6,12 @@ a {  /*get rid of underline on all links on page */
 
 /*Header*/
 
+/*Background image and "Menu" Link */
 .LogoLarge {
     background-image: url("../Logos/BKLogoLarge.jpg");
     background-size:cover;
-    height: 200px; /*This is a placeholder height; it will need to be changed */
+    height: 175px; /*This is a placeholder height; it will need to be changed */
+
 }
 
 /*This container permits me to easily position the mobileMenuLink */
@@ -27,10 +29,12 @@ a {  /*get rid of underline on all links on page */
     margin-right: 10px; 
 }
 
+/* Slid-out menu */
 .mobileNavHide {
     display: grid;
     grid-template-columns: 1fr;
     background-color: yellow; /*This is a place holder color so I can see the menu.  It's real color is #EBF4FE  */
+    
         
 }
 /*This is the x-out targeted by location and not by class name */
@@ -45,6 +49,7 @@ a {  /*get rid of underline on all links on page */
     grid-template-columns: 1fr;
     list-style: none; 
     padding-left: 0;
+    
 }
 
 .mobileNavHide-Links li {
@@ -56,6 +61,15 @@ a {  /*get rid of underline on all links on page */
 /*Main */
 .mainFootBackround {
     background-color: #EBF4FE;
+}
+.mobileMainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2%;
+}
+
+.mobileMainGrid img {
+    place-self:center;
 }
 
 
