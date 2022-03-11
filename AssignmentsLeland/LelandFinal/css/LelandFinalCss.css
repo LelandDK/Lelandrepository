@@ -1,5 +1,9 @@
 /* Mobile First */
 
+body {
+    background-color:#EBF4FE;
+}
+
 a {  /*get rid of underline on all links on page */
     text-decoration: none;
 }
@@ -10,7 +14,7 @@ a {  /*get rid of underline on all links on page */
 .LogoLarge {
     background-image: url("../Logos/BKLogo60.jpg");
     background-size:cover;
-    height: 170px; /*This is a placeholder height; it will need to be changed */
+    height: 170px; 
 
 }
 
@@ -23,9 +27,10 @@ a {  /*get rid of underline on all links on page */
 .mobileMenuLink {
     font-family: "caveat";
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight:bolder;
     place-self: end; 
-    margin-right: 10px; 
+    margin-right: 15px; 
+    margin-top: 10px;
 }
 
 /* Slid-out menu*/
@@ -67,17 +72,27 @@ a {  /*get rid of underline on all links on page */
 
 
 /*Main */
-.mainFootBackround {
-    background-color: #EBF4FE;
-}
+/*Grid permits me to center images within column */
 .mobileMainGrid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2%;
 }
 
 .mobileMainGrid img {
     place-self:center;
+}
+
+
+
+img {
+    display:block; /*Images by default are in-line */
+    width: 45%; /*reduce image size */
+    margin-bottom: 5%;
+    border: 10px solid white;
+}
+
+#mobileHomeImg1 {
+    margin-top: 5%;
 }
 
 
