@@ -29,12 +29,17 @@ a {  /*get rid of underline on all links on page */
     margin-right: 10px; 
 }
 
-/* Slid-out menu */
-.mobileNavHide {
+/* Slid-out menu*/
+
+.mobileNavHide { /*div container, which which contains two grid-rows: one for the x-out and one for the links */
     display: grid;
     grid-template-columns: 1fr;
     background-color: yellow; /*This is a place holder color so I can see the menu.  It's real color is #EBF4FE  */
-    
+    position: fixed; /*This takes the div container outside of the normal flow.*/
+    width: 0vw; /*Sets width of div container to 0% of viewport's width. JS will change it to 75% vw. */
+    overflow: hidden; /*This makes sure that the content (below) responds the same as the container.  Without it, the content would continue to show whether or not the container (with background color) is shown or hidden. */
+    transition: all 0.5s ease-in-out;
+      
         
 }
 /*This is the x-out targeted by location and not by class name */
@@ -42,19 +47,23 @@ a {  /*get rid of underline on all links on page */
     place-self: end; 
     margin-top: 5px;
     margin-right: 10px;
+    
 }
 
 .mobileNavHide-Links {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /*This placed links into the top four rows in the six row layout, thereby decreasing space between them and increasing space between all of them and the bottom of container */
     list-style: none; 
     padding-left: 0;
+    height: 100vh; /*The nav has two rows (the x and the links). This addition adds height to the links only, so the x stays near the top of the page.  100vh makes the height the same as the viewport's height */
     
 }
 
 .mobileNavHide-Links li {
     font-family: Arial, Helvetica, sans-serif;
     place-self: center;
+    font-size: 1.75rem;
 }
 
 
