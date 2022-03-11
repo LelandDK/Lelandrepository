@@ -8,23 +8,22 @@ a {  /*get rid of underline on all links on page */
 
 /*Background image and "Menu" Link */
 .LogoLarge {
-    background-image: url("../Logos/BKLogoLarge.jpg");
+    background-image: url("../Logos/BKLogo60.jpg");
     background-size:cover;
-    height: 175px; /*This is a placeholder height; it will need to be changed */
+    height: 170px; /*This is a placeholder height; it will need to be changed */
 
 }
 
 /*This container permits me to easily position the mobileMenuLink */
 .mobileMenuLink-grid-container {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .mobileMenuLink {
     font-family: "caveat";
     font-size: 1.5rem;
     font-weight: bold;
-    grid-row: 5 / 6;
     place-self: end; 
     margin-right: 10px; 
 }
