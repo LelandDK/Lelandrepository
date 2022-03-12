@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
 
-    <title>LelandFinalProjectHomePage</title>
+    <title>LelandFinalProjectBioPage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="normalizeStyleSheet" href="css/normalize.css">
 
@@ -12,11 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lato&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/HomePage.css">
+    <link rel="stylesheet" href="css/BioPage.css">
 </head>
 
 <body>
-
     <header class="primaryNav">
         <nav>
         <!--Slide menu-->
@@ -24,7 +23,7 @@
             <a class="X-out" href="#">X</a>
 
                 <ul class="mobileNavHide-Links"> 
-                    <li><a class="homePageLink" href="#">Home</a></li> 
+                    <li><a class="homePageLink" href="FinalHomePage.html">Home</a></li> 
                     <li><a class="biographyLink" href="FinalBio.html">Biography</a></li><!--Add in link when you have it-->
                     <li><a class="galleriesLink" href="#">Galleries</a></li>
                     <li><a class="contactLink" href="#">Contact</a></li>
@@ -43,14 +42,23 @@
        
     </header>
 
+    <main>
+        <article class="articleContainer">
+            <div id="bioImageContainer">
+                <img src="images/Mobile Images/12 Bob at work.jpg" alt="Picture of Bob Kiang">
+            </div>
 
-  <!--main and footer-->  
-         
-    <main class="mobileMainGrid"> <!--CSS Grid & Display:block for desktop-->
-        <img src="images/Mobile Images/15 Dead Jeffrey Pine on Sentinel Dome, Yosemite.jpg" id="mobileHomeImg1" alt="Golden-colored dead pine tree on mountain top">
-        <img src="images/Mobile Images/15 Little Five Lakes, Sierra Nevada, California.jpg" id="mobileHomeImg2" alt="Sierra Nevada Lake at sunset">
-        <img src="images/Mobile Images/15 Calif Poppy.jpg" id="mobileHomeImg3" alt="Close-up of California Poppies">
+            <div id="bioTextContainer">
+                <h1>Biography</h1>
+
+                <p class="bioText">Bob is a retired engineer.  He became interested in nature and in wildflowers in the 1970s and 80s when he took countless backpacking trips to the Sierra Nevada, Los Padres National Forest, and the Grand Canyon.  His interests in photography date further back to the day his father presented him with a simple camera when he was in high school. </p>
+            </div>
         
+        </article>
+        
+        
+
+
     </main>
 
     <footer>
@@ -64,7 +72,8 @@
 
     </footer>
 
-    <script src="JS/HomePage.js" charset="utf-8"></script>
 
+    <script src="js/Biopage.js" charset="utf-8"></script>
 </body>
+
 </html>
