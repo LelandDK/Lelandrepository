@@ -1,3 +1,5 @@
+/*SLIDE MENU */
+
 /* .mobileNavHide's width default position is 0vw */
 
 /*Hav mobileNavHide's element expand when user clicks on "menu" */
@@ -15,12 +17,14 @@
         hiddenMenu.classList.add("mobileNavShow"); /* adds new styled class that expands menu */
       }
 
-/* Have mobileNavHide's element shrink when user clicks "X" */
-      /*Target "X" and place in variable */
+/* Have mobileNavHide's element shrink when user clicks "X" or "Home"*/
+      /*Target "X" and "Hone" and place in variables */
       let xIcon = document.querySelector(".X-out"); 
+      let homeIcon = document.querySelector(".homePageLink");
 
-      /*Add listening Event to xIcon and make handler a function mobileMenuHide() */
+      /*Add listening Event to xIcon homeIcon and make handlers a function mobileMenuHide() */
       xIcon.addEventListener("click", mobileMenuHide);
+      homeIcon.addEventListener("click", mobileMenuHide);
 
       /*Declare mobileMenuHide fucntion */
       function mobileMenuHide() {
@@ -28,5 +32,8 @@
         hiddenMenu.classList.remove("mobileNavShow"); /* deletes new styled class that expands menu */
 
       }
+
+
+
     
 

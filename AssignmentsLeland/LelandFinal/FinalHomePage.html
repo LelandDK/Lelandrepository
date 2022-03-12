@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
 
-    <title>LelandFinalProject</title>
+    <title>LelandFinalProjectHomePage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="normalizeStyleSheet" href="css/normalize.css">
 
@@ -12,33 +12,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Lato&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/LelandFinalCss.css">
+    <link rel="stylesheet" href="css/HomePage.css">
 </head>
 
 <body>
 
     <header class="primaryNav">
         <nav>
-        <!--will need JS and CSS to toggle this-->
+        <!--Slide menu-->
         <div class="mobileNavHide">
             <a class="X-out" href="#">X</a>
 
                 <ul class="mobileNavHide-Links"> 
-                    <li><a class="homePageLink" href="#">Home</a></li> <!--Add in link when you have it-->
-                    <li><a class="biographyLink" href="#">Biography</a></li>
+                    <li><a class="homePageLink" href="#">Home</a></li> 
+                    <li><a class="biographyLink" href="#">Biography</a></li><!--Add in link when you have it-->
                     <li><a class="galleriesLink" href="#">Galleries</a></li>
                     <li><a class="contactLink" href="#">Contact</a></li>
                 </ul>
         </div>
         
-        <div class="LogoLarge"><!--in CSS, set as background-image-->
-            <div class="mobileMenuLink-grid-container"> <!--container added so MenuLink in a-tag can be positioned easily-->
-                    <a class="mobileMenuLink" href="#">Menu</a> <!--add link when you get this-->
+        <!--Background logo and "Menu" icon-->
+        <div class="LogoLarge">
+            <div class="mobileMenuLink-grid-container"> <!--container added so contained "Menu" icon can be positioned easily-->
+                    <a class="mobileMenuLink" href="#">Menu</a>
                 </div>
-
-                <!--This nav menu should be hidden until "Menu" above is clicked-->
-                <div class="LogoSmall"></div> <!--header section of pop-up menu  THIS HAS NOT BEEN ADDED YET IN CSS-->
-                   
+                                   
         </div> <!--background logo end-->
               
         </nav>
@@ -49,7 +47,6 @@
   <!--main and footer-->  
          
     <main class="mobileMainGrid"> <!--CSS Grid & Display:block for desktop-->
-        <!--Do I need a white background here or make double border?-->
         <img src="images/Mobile Images/15 Dead Jeffrey Pine on Sentinel Dome, Yosemite.jpg" id="mobileHomeImg1">
         <img src="images/Mobile Images/15 Little Five Lakes, Sierra Nevada, California.jpg" id="mobileHomeImg2">
         <img src="images/Mobile Images/15 Calif Poppy.jpg" id="mobileHomeImg3">
@@ -67,12 +64,7 @@
 
     </footer>
 
-  
+    <script src="JS/HomePage.js" charset="utf-8"></script>
 
-    
-
-
-
-    <script src="JS/LelandFinalJS.js" charset="utf-8"></script>
 </body>
 </html>
