@@ -83,29 +83,26 @@ main {
 
 /*Bob Image */
 .articleContainer {
-    display:grid;
-    grid-template-rows: 1fr;
+    margin: 0 20%;
+    
 }
 
 #bioImageContainer {
-    place-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 img {
+    place-self: center;
     border: 8px solid white;
     margin-top: 50px;
     margin-bottom: 22px;
+    width: 100%;
     
 }
 
 /*Biography Text */
 
-/* Question: I wantt the text to line up with the photo, but it only does so on certain cell phone sizes */
-
-#bioTextContainer {
-    margin-left: 76px;
-    margin-right: 76px;
-}
 
 h1 {
     font-size: 1.10rem

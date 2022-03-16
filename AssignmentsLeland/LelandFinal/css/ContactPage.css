@@ -90,17 +90,21 @@ main {
 img {
     border: 8px solid white;
     place-self: center;
-    margin-top: 30px;
+    margin-top: 9%;
+    width: 47%;
     
 }
 
 /*Form and form (intro) text */
 
 #textAndForm {
-    margin-top: 25px;
-    margin-left: 84px;
-    margin-right: 35px;
+    margin: 7% 12% 0 23%;
+    
 }
+
+/*margin-top: 25px;
+    margin-left: 84px;
+    margin-right: 35px; */
 
 h1 {
     font-size: 1.10rem;
