@@ -1,4 +1,7 @@
 body {
+    background-image: url(../Logos/MountainSky3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color:#EBF4FE;
 }
 
@@ -10,7 +13,7 @@ a {  /*get rid of underline on all links on page */
 
 /*Background image and "Menu" Link */
 
-#logoMenu {
+.logoMenu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
@@ -19,7 +22,7 @@ a {  /*get rid of underline on all links on page */
     width: 155%;
 }
 
-h2 {
+.headerText {
     font-family: "caveat";
     grid-column: 2/ 5;
 }

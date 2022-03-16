@@ -1,4 +1,8 @@
 body {
+    background-image: url(../Logos/MountainSky3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     background-color:#EBF4FE;
 }
 
@@ -9,26 +13,26 @@ a {  /*get rid of underline on all links on page */
 /*Header*/
 
 /*Background image and "Menu" Link */
-.LogoLarge {
-    background-image: url("../Logos/Dadlogostretch.jpg");
-    background-size:cover;
-    height: 110px; 
+.logoMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 
+.logo {
+    width: 155%;
 }
 
-/*This container permits me to easily position the mobileMenuLink */
-.mobileMenuLink-grid-container {
-    display: grid;
-    grid-template-rows: 1fr;
+.headerText {
+    font-family: "caveat";
+    grid-column: 2/ 5;
 }
 
 .mobileMenuLink {
     font-family: "caveat";
     font-size: 1.5rem;
     font-weight:bolder;
-    place-self: end; 
-    margin-right: 15px; 
-    margin-top: 10px;
+    grid-column: 6/ 7;
+
 }
 
 /* Slid-out menu*/
@@ -87,7 +91,7 @@ main {
     
 }
 
-img {
+.contactImage {
     border: 8px solid white;
     place-self: center;
     margin-top: 9%;
