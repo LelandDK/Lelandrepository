@@ -130,3 +130,64 @@ a {  /*get rid of underline on all links on page */
     margin-left: 2px;
     margin-right: 2px;
 }
+
+/* Media Screens */
+
+/* 479px */
+
+@media screen and (min-width:479px) {
+    .headerText {
+        font-size: 1.8em;
+    }
+
+    .mobileMenuLink {
+        font-size: 1.8rem;
+    }
+
+    #mobileHomeImg1, #mobileHomeImg2, #mobileHomeImg3 {
+        width: 47%;
+    }
+    
+    .footerFlexbox {
+        font-size: 12px;
+    }
+   
+} 
+
+/* 570px */
+
+@media screen and (min-width:570px) {
+    .headerText {
+        font-size: 2.3rem;
+    }
+
+    .mobileMenuLink {
+        font-size: 2.3rem;
+    }
+
+    
+    .footerFlexbox {
+        font-size: 16px;
+    }
+}
+
+/* 768 px */
+@media screen and (min-width:768px) {
+    .headerText {
+        font-size: 3.0rem;
+    }
+
+    .mobileMenuLink {
+        font-size: 3.0rem;
+    }
+    
+    #mobileHomeImg1, #mobileHomeImg2, #mobileHomeImg3 {
+        width: 49%;
+    }
+
+    .footerFlexbox {
+        font-size: 20px;
+    }
+}
+
+/* 992 px and 1200px - switch layout */
