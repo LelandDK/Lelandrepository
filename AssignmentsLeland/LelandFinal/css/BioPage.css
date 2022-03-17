@@ -101,7 +101,7 @@ main {
 .bioImage {
     place-self: center;
     border: 8px solid white;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 22px;
     width: 100%;
     
@@ -126,6 +126,8 @@ h1 {
     font-size:10px;
     justify-content: center;
     padding-left: 0;
+    padding-top: 10%;
+    padding-bottom: 7%;
 }
 
 .footerFlexbox li {

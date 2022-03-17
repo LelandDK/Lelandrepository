@@ -1,8 +1,9 @@
 body {
+    
     background-image: url(../Logos/MountainSky3.png);
     background-size: cover;
     background-repeat: no-repeat;
-
+    
     background-color:#EBF4FE;
 }
 
@@ -26,6 +27,7 @@ a {  /*get rid of underline on all links on page */
     font-family: "caveat";
     grid-column: 2/ 5;
 }
+
 
 .mobileMenuLink {
     font-family: "caveat";
@@ -85,44 +87,19 @@ main {
     font-family:Arial, Helvetica, sans-serif;
 }
 
-#contactImageContainer {
-    display: grid;
-    grid-template-rows: 1fr;
-    
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-.contactImage {
-    border: 8px solid white;
-    place-self: center;
-    margin-top: 7%;
-    width: 47%;
-    
+.row {
+    flex: 60%;
+    margin: 10%;
 }
 
-/*Form and form (intro) text */
 
-#textAndForm {
-    margin: 7% 12% 0 23%;
-    
-}
-
-h1 {
-    font-size: 1.10rem;
-}
-
-p, label {
-    font-size: 0.8rem;
-}
-
-input {
-    margin-bottom: 7px;
-    width: 75%;
-}
-
-.btnMargin {
-    margin-top: 4px;
-    margin-bottom: 2px;
-}
 
 /*Footer */
 .footerFlexbox {
@@ -140,88 +117,3 @@ input {
     margin-left: 2px;
     margin-right: 2px;
 }
-
-/* Media Screens */
-
-/* 479px */
-
-@media screen and (min-width:479px) {
-    .headerText {
-        font-size: 1.8em;
-    }
-
-    .mobileMenuLink {
-        font-size: 1.8rem;
-    }
-
-    h1 {
-        font-size: 1.4rem;
-    }
-    
-    p, label {
-        font-size: 1.0rem;
-    }
-
-    .footerFlexbox {
-        font-size: 12px;
-    }
-   
-} 
-
-/* 570px */
-
-@media screen and (min-width:570px) {
-    .headerText {
-        font-size: 2.3rem;
-    }
-
-    .mobileMenuLink {
-        font-size: 2.3rem;
-    }
-
-    .contactImage {
-        width: 44%;
-    }
-
-    h1 {
-        font-size: 1.6rem;
-    }
-
-    p, label {
-        font-size: 1.2rem;
-    }
-
-    .footerFlexbox {
-        font-size: 16px;
-    }
-}
-
-/* 768 px */
-@media screen and (min-width:768px) {
-    .headerText {
-        font-size: 3.0rem;
-    }
-
-    .mobileMenuLink {
-        font-size: 3.0rem;
-    }
-    
-    h1 {
-        font-size: 2.0rem;
-    }
-
-    p, label {
-        font-size: 1.6rem;
-    }
-
-    input {
-        width: 85%;
-        height: 21px;
-    }
-
-    .footerFlexbox {
-        font-size: 20px;
-    }
-}
-
-/* 992 px and 1200px - switch layout */

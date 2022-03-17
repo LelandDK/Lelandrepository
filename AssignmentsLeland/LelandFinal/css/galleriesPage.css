@@ -131,6 +131,8 @@ main {
     font-size:10px;
     justify-content: center;
     padding-left: 0;
+    padding-top: 10%;
+    padding-bottom: 7%;
 }
 
 .footerFlexbox li {

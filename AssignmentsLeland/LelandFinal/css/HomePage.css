@@ -110,7 +110,7 @@ a {  /*get rid of underline on all links on page */
 
 
 #mobileHomeImg1 {
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 
@@ -122,6 +122,8 @@ a {  /*get rid of underline on all links on page */
     font-size:10px;
     justify-content: center;
     padding-left: 0;
+    padding-top: 9%;
+    padding-bottom: 7%;
 }
 
 .footerFlexbox li {
