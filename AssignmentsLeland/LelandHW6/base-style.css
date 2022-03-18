@@ -380,7 +380,7 @@ a {
     margin-bottom: 15px;
   }
 
-  /* Turn on burger symbol (which is hidden by CSS ruleset above), change color of grid, and place burger in sixth grid area */
+  /* Turn on burger symbol (which is hidden by CSS ruleset above, line 163), change color of grid, and place burger in sixth grid area */
   .trulia-nav-toggle {
     display: block;
     color: white;
