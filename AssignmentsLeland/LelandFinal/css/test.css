@@ -11,7 +11,7 @@ a {  /*get rid of underline on all links on page */
 
 /*Header*/
 
-/*Background image and "Menu" Link */
+/*Logo and "Menu" Link */
 
 .logoMenu {
     display: grid;
@@ -80,6 +80,12 @@ a {  /*get rid of underline on all links on page */
     width: 100vw;
 }
 
+/* Desktop Menu */
+.deskTopMenu {
+    display: none;
+}
+
+
 /* Main */
 
 /*Footer */
@@ -95,4 +101,59 @@ a {  /*get rid of underline on all links on page */
 .footerFlexbox li {
     margin-left: 2px;
     margin-right: 2px;
+}
+
+/* CHANGED */
+
+@media screen and (min-width: 697px) {
+
+    .mobileMenuLink {
+        display: none;
+    }
+
+    .deskTopMenu {
+        display: block;
+        grid-row: 1;
+        grid-column: 2/ 7;
+        align-self: center;
+        margin-bottom: 3%;
+        margin-left: 10%;
+    }
+
+    .deskTopMenuFlexContainer {
+        display: flex;
+        list-style: none;
+        position: relative;
+        z-index: 3;
+        gap: 8%;
+                
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-family: "caveat";
+        font-size: 2.5rem;
+        font-weight:bold; 
+    }
+
+    .headerText {
+        position: relative;
+        z-index: 2; 
+        grid-row: 1;
+        grid-column: 1/ 3;
+        font-size: 1.7rem;
+        align-self: end;
+        margin-top: 44%;
+        margin-left: 6%;
+         
+        
+    }
+
+    .logo {
+        grid-row: 1;
+        grid-column: 1/ 2;
+        margin-top: 5%;
+        margin-left: 28%;
+        width: 105%;
+    }
+
 }

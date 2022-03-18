@@ -20,11 +20,14 @@ a {  /*get rid of underline on all links on page */
 
 .logo {
     width: 155%;
+    margin-top: 6%;
+    margin-left: 7%;
 }
 
 .headerText {
     font-family: "caveat";
     grid-column: 2/ 5;
+    margin-top: 15%;
 }
 
 .mobileMenuLink {
