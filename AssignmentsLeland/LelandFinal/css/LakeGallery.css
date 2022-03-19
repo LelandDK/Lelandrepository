@@ -21,16 +21,12 @@ a {  /*get rid of underline on all links on page */
 
 .logo {
     width: 155%;
-    margin-top: 6%;
-    margin-left: 7%;
 }
-
+    
 .headerText {
-    font-family: "caveat";
-    grid-column: 2/ 5;
-    margin-top: 15%;
+        font-family: "caveat";
+        grid-column: 2/ 5;
 }
-
 
 .mobileMenuLink {
     font-family: "caveat";
@@ -38,6 +34,11 @@ a {  /*get rid of underline on all links on page */
     font-weight:bolder;
     grid-column: 6/ 7;
 
+}
+
+/* Desktop Menu */
+.deskTopMenu {
+    display: none;
 }
 
 /* Slid-out menu*/
@@ -119,4 +120,57 @@ main {
 .footerFlexbox li {
     margin-left: 2px;
     margin-right: 2px;
+}
+
+@media screen and (min-width: 992px) {
+
+    .mobileMenuLink {
+        display: none;
+    }
+
+    .deskTopMenu {
+        display: block;
+        grid-row: 1;
+        grid-column: 2/ 7;
+        align-self: center;
+        margin-bottom: 3%;
+        margin-left: 10%;
+    }
+
+    .deskTopMenuFlexContainer {
+        display: flex;
+        list-style: none;
+        position: relative;
+        z-index: 3;
+        gap: 8%;
+                
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-family: "caveat";
+        font-size: 2.5rem;
+        font-weight:bold; 
+    }
+
+    .headerText {
+        position: relative;
+        z-index: 2; 
+        grid-row: 1;
+        grid-column: 1/ 3;
+        font-size: 1.4rem;
+        align-self: end;
+        margin-top: 44%;
+        margin-left: 6%;
+         
+        
+    }
+
+    .logo {
+        grid-row: 1;
+        grid-column: 1/ 2;
+        margin-top: 5%;
+        margin-left: 28%;
+        width: 105%;
+    }
+
 }
