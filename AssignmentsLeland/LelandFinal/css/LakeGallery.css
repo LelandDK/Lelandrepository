@@ -102,7 +102,11 @@ main {
 
 .row {
     flex: 60%;
-    margin: 10%;
+    margin: 5%;
+}
+
+.mainImages {
+    border: 8px solid white;
 }
 
 
