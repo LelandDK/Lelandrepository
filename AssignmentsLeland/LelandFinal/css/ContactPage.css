@@ -25,6 +25,7 @@ a {  /*get rid of underline on all links on page */
 .headerText {
     font-family: "caveat";
     grid-column: 2/ 5;
+    margin-top: 15%;
 }
 
 .mobileMenuLink {
@@ -280,4 +281,64 @@ input {
         width: 105%;
     }
 
+}
+
+@media screen and (min-width: 1050px) {
+    .headerText {
+        font-size: 1.5rem;
+        
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-size: 2.6rem;
+            }
+
+}
+
+@media screen and (min-width: 1090px) {
+    .headerText {
+        font-size: 1.6rem;
+        
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-size: 2.7rem;
+            }
+
+}
+
+@media screen and (min-width: 1160px) {
+    .headerText {
+        font-size: 1.7rem;
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-size: 2.9rem;
+            }
+}
+
+@media screen and (min-width: 1200px) {
+    .deskTopMenuFlexContainer li {
+        font-size: 3.1rem;
+            }
+}
+
+@media screen and (min-width: 1300px) {
+    .headerText {
+        font-size: 1.9rem;
+    }
+    
+    .deskTopMenuFlexContainer li {
+        font-size: 3.4rem;
+            }
+}
+
+@media screen and (min-width: 1380px) {
+    .headerText {
+        font-size: 2.0rem;
+    }
+    
+    .deskTopMenuFlexContainer li {
+        font-size: 3.5rem;
+            }
 }

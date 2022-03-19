@@ -26,6 +26,8 @@ a {  /*get rid of underline on all links on page */
 .headerText {
         font-family: "caveat";
         grid-column: 2/ 5;
+        margin-top: 15%;
+        font-weight: bold;
 }
 
 .mobileMenuLink {
@@ -122,6 +124,54 @@ main {
     margin-right: 2px;
 }
 
+/* 479px */
+
+@media screen and (min-width:479px) {
+    .headerText {
+        font-size: 1.8em;
+    }
+
+    .mobileMenuLink {
+        font-size: 1.8rem;
+    }
+
+       
+    .footerFlexbox {
+        font-size: 12px;
+    }
+   
+} 
+
+/* 570px */
+
+@media screen and (min-width:570px) {
+    .headerText {
+        font-size: 2.3rem;
+    }
+
+    .mobileMenuLink {
+        font-size: 2.3rem;
+    }
+
+   .footerFlexbox {
+        font-size: 16px;
+    }
+}
+
+/* 768 px */
+@media screen and (min-width:768px) {
+    .headerText {
+        font-size: 3.0rem;
+    }
+
+    .mobileMenuLink {
+        font-size: 3.0rem;
+    }
+    
+    .footerFlexbox {
+        font-size: 20px;
+    }
+}
 @media screen and (min-width: 992px) {
 
     .mobileMenuLink {
@@ -173,4 +223,64 @@ main {
         width: 105%;
     }
 
+}
+
+@media screen and (min-width: 1050px) {
+    .headerText {
+        font-size: 1.5rem;
+        
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-size: 2.6rem;
+            }
+
+}
+
+@media screen and (min-width: 1090px) {
+    .headerText {
+        font-size: 1.6rem;
+        
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-size: 2.7rem;
+            }
+
+}
+
+@media screen and (min-width: 1160px) {
+    .headerText {
+        font-size: 1.7rem;
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-size: 2.9rem;
+            }
+}
+
+@media screen and (min-width: 1200px) {
+    .deskTopMenuFlexContainer li {
+        font-size: 3.1rem;
+            }
+}
+
+@media screen and (min-width: 1300px) {
+    .headerText {
+        font-size: 1.9rem;
+    }
+    
+    .deskTopMenuFlexContainer li {
+        font-size: 3.4rem;
+            }
+}
+
+@media screen and (min-width: 1380px) {
+    .headerText {
+        font-size: 2.0rem;
+    }
+    
+    .deskTopMenuFlexContainer li {
+        font-size: 3.5rem;
+            }
 }
