@@ -258,6 +258,10 @@ a {  /*get rid of underline on all links on page */
         width: 105%;
     }
 
+    .footerFlexbox {
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (min-width: 1050px) {
@@ -306,7 +310,7 @@ a {  /*get rid of underline on all links on page */
     }
     
     .deskTopMenuFlexContainer li {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
             }
 }
 

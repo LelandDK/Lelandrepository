@@ -93,6 +93,10 @@ main {
     font-family:Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    margin: 5% 30% 5% 30%;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -227,6 +231,10 @@ main {
         width: 105%;
     }
 
+    .footerFlexbox {
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (min-width: 1050px) {
@@ -275,7 +283,7 @@ main {
     }
     
     .deskTopMenuFlexContainer li {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
             }
 }
 

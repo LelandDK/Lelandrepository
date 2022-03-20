@@ -281,6 +281,10 @@ input {
         width: 105%;
     }
 
+    .footerFlexbox {
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (min-width: 1050px) {
@@ -329,7 +333,7 @@ input {
     }
     
     .deskTopMenuFlexContainer li {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
             }
 }
 

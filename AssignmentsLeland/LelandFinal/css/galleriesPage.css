@@ -260,6 +260,48 @@ main {
         width: 105%;
     }
 
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 4%;
+    }
+
+    .h2Link {
+        grid-row: 2;
+    }
+
+   .imageGalleryLink {
+       width: 65%;
+   }
+
+    #YosemiteGalleryImage {
+        grid-row: 1;
+        grid-column: 3/ 4;
+        margin-right: 24%;
+    }
+
+    #LakeGalleryImage {
+        margin-left: 24%;
+    }
+
+    .mainh2s {
+        font-size: 1.1rem;
+    }
+
+    #h2Margin1 {
+        margin-left: 90%;
+    }
+
+    #h2Margin2 {
+        margin-left: 39%;
+    }
+
+    #h2Margin3 {
+        margin-left: 30%;
+    }
+
+    .footerFlexbox {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 1050px) {
@@ -270,7 +312,7 @@ main {
 
     .deskTopMenuFlexContainer li {
         font-size: 2.6rem;
-            }
+    }
 
 }
 
@@ -282,7 +324,7 @@ main {
 
     .deskTopMenuFlexContainer li {
         font-size: 2.7rem;
-            }
+    }
 
 }
 
@@ -293,13 +335,25 @@ main {
 
     .deskTopMenuFlexContainer li {
         font-size: 2.9rem;
-            }
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .deskTopMenuFlexContainer li {
         font-size: 3.1rem;
-            }
+    }
+
+    #h2Margin1 {
+        margin-left: 101%;
+    }
+
+    #h2Margin2 {
+        margin-left: 41%;
+    }
+
+    #h2Margin3 {
+        margin-left: 32%;
+    }
 }
 
 @media screen and (min-width: 1300px) {
@@ -308,7 +362,7 @@ main {
     }
     
     .deskTopMenuFlexContainer li {
-        font-size: 3.4rem;
+        font-size: 3.2rem;
             }
 }
 
