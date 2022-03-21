@@ -102,7 +102,9 @@ a {  /*get rid of underline on all links on page */
     place-self:center;
 }
 
-
+#Block, #Block2 {
+    display: none;
+}
 
 #mobileHomeImg1, #mobileHomeImg2, #mobileHomeImg3 {
     display:block; /*Images by default are in-line */
@@ -258,6 +260,41 @@ a {  /*get rid of underline on all links on page */
         width: 105%;
     }
 
+    .mobileMainGrid {
+        margin-top: 5%;
+    }
+
+    #Block {
+        display: block;
+        position: relative;
+        z-index: 1; 
+        background-color: #7c8aa5;
+        width: 100%;
+        height: 243px;
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #Block2 {
+        display: block;
+        background-color: #7c8aa5;
+        width: 100%;
+        height: 70px;
+    }
+
+    
+    #mobileHomeImg1, #mobileHomeImg3 {
+        display: none;
+    }
+
+    #mobileHomeImg2 {
+        position: relative;
+        z-index: 3;
+        grid-row: 2;
+        grid-column: 1;
+       
+    }
+
     .footerFlexbox {
         font-size: 15px;
     }
@@ -267,23 +304,45 @@ a {  /*get rid of underline on all links on page */
 @media screen and (min-width: 1050px) {
     .headerText {
         font-size: 1.5rem;
-        
     }
 
     .deskTopMenuFlexContainer li {
         font-size: 2.6rem;
     }
 
+    .mobileMainGrid {
+        margin-top: 4%;
+    }
+
+    #mobileHomeImg2 {
+        width: 48%;
+    }
+
+    #Block {
+        height: 255px;
+    }
+
 }
 
 @media screen and (min-width: 1090px) {
     .headerText {
-        font-size: 1.6rem;
-        
+        font-size: 1.6rem; 
     }
 
     .deskTopMenuFlexContainer li {
         font-size: 2.7rem;
+    }
+
+    .mobileMainGrid {
+        margin-top: 3%;
+    }
+
+    #mobileHomeImg2 {
+        width: 47%;
+    }
+
+    #Block {
+        height: 259px;
     }
 
 }
@@ -296,17 +355,50 @@ a {  /*get rid of underline on all links on page */
     .deskTopMenuFlexContainer li {
         font-size: 2.8rem;
     }
+
+    .mobileMainGrid {
+        margin-top: 2%;
+    }
+
+    #mobileHomeImg2 {
+        width: 44%;
+    }    
 }
 
 @media screen and (min-width: 1200px) {
     .deskTopMenuFlexContainer li {
         font-size: 3.1rem;
     }
+
+    #mobileHomeImg2 {
+        width: 43%;
+    }    
+}
+
+@media screen and (min-width: 1240px) {
+    #Block {
+        height: 267px;
+    }
+}
+
+@media screen and (min-width: 1275px) {
+    #mobileHomeImg2 {
+        width: 41%;
+    }  
+
+    #Block {
+        height: 269px;
+    }
+
 }
 
 @media screen and (min-width: 1300px) {
     .headerText {
         font-size: 1.9rem;
+    }
+
+    #Block {
+        height: 273px;
     }
     
 }
@@ -318,5 +410,9 @@ a {  /*get rid of underline on all links on page */
     
     .deskTopMenuFlexContainer li {
         font-size: 3.5rem;
-            }
+    }
+
+    #Block {
+        height: 282px;
+    }
 }
