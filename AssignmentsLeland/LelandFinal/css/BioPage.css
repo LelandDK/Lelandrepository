@@ -253,7 +253,7 @@ h1 {
         position: relative;
         z-index: 3;
         gap: 8%;
-                
+                     
     }
 
     .deskTopMenuFlexContainer li {
@@ -416,6 +416,13 @@ h1 {
   
 }
 
+@media screen and (min-width: 1360px) {
+    .bioImage {
+        height: 58%;
+    }
+
+}
+
 @media screen and (min-width: 1380px) {
     .headerText {
         font-size: 2.0rem;
@@ -430,7 +437,7 @@ h1 {
     }
 
     .bioImage {
-        width: 100%;
+        width: 95%;
     }
 }
 

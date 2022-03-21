@@ -230,7 +230,7 @@ a {  /*get rid of underline on all links on page */
         position: relative;
         z-index: 3;
         gap: 8%;
-                
+                        
     }
 
     .deskTopMenuFlexContainer li {
@@ -414,5 +414,9 @@ a {  /*get rid of underline on all links on page */
 
     #Block {
         height: 282px;
+    }
+
+    #Block2 {
+        height: 67px;
     }
 }
