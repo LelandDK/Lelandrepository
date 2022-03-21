@@ -102,7 +102,10 @@ main {
     place-self: center;
     margin-top: 7%;
     width: 47%;
-    
+}
+
+#VernalFalls, #MohaveMoundCactus, #SeventeenHoleBridge {
+    display: none;
 }
 
 /*Form and form (intro) text */
@@ -185,7 +188,7 @@ input {
         font-size: 2.3rem;
     }
 
-    .contactImage {
+    #mobileTabletImage {
         width: 44%;
     }
 
@@ -288,6 +291,14 @@ input {
 
     .contactImage {
         width: 65%;
+    }
+
+    #mobileTabletImage {
+        display: none;
+    }
+
+    #VernalFalls, #MohaveMoundCactus, #SeventeenHoleBridge {
+        display: block;
     }
 
     #VernalFalls {
