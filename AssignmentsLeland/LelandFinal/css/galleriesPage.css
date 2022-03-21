@@ -334,7 +334,7 @@ main {
     }
 
     .deskTopMenuFlexContainer li {
-        font-size: 2.9rem;
+        font-size: 2.8rem;
     }
 }
 
@@ -361,9 +361,6 @@ main {
         font-size: 1.9rem;
     }
     
-    .deskTopMenuFlexContainer li {
-        font-size: 3.2rem;
-            }
 }
 
 @media screen and (min-width: 1380px) {

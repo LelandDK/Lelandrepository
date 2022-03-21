@@ -363,7 +363,7 @@ h1 {
         height: 55%;           
     }
 
-    }
+}
 
 @media screen and (min-width: 1160px) {
     .headerText {
@@ -371,7 +371,7 @@ h1 {
     }
 
     .deskTopMenuFlexContainer li {
-        font-size: 2.9rem;
+        font-size: 2.8rem;
     }
 
     .articleContainer {
@@ -410,15 +410,10 @@ h1 {
         font-size: 1.9rem;
     }
     
-    .deskTopMenuFlexContainer li {
-        font-size: 3.2rem;
-    }
-
     .articleContainer {
         grid-template-columns: 29% 22% 26% 23%;
      }
-
-     
+  
 }
 
 @media screen and (min-width: 1380px) {

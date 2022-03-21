@@ -272,7 +272,7 @@ a {  /*get rid of underline on all links on page */
 
     .deskTopMenuFlexContainer li {
         font-size: 2.6rem;
-            }
+    }
 
 }
 
@@ -284,7 +284,7 @@ a {  /*get rid of underline on all links on page */
 
     .deskTopMenuFlexContainer li {
         font-size: 2.7rem;
-            }
+    }
 
 }
 
@@ -294,14 +294,14 @@ a {  /*get rid of underline on all links on page */
     }
 
     .deskTopMenuFlexContainer li {
-        font-size: 2.9rem;
-            }
+        font-size: 2.8rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .deskTopMenuFlexContainer li {
         font-size: 3.1rem;
-            }
+    }
 }
 
 @media screen and (min-width: 1300px) {
@@ -309,9 +309,6 @@ a {  /*get rid of underline on all links on page */
         font-size: 1.9rem;
     }
     
-    .deskTopMenuFlexContainer li {
-        font-size: 3.2rem;
-            }
 }
 
 @media screen and (min-width: 1380px) {

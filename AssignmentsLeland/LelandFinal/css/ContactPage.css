@@ -281,6 +281,40 @@ input {
         width: 105%;
     }
 
+    #contactImageContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+    .contactImage {
+        width: 65%;
+    }
+
+    #VernalFalls {
+        margin-left: 24%;
+    }
+
+    #MohaveMoundCactus {
+        width: 67%;
+    } 
+
+    #SeventeenHoleBridge {
+        width: 68%;
+        margin-right: 24%;
+    }
+
+    #textAndForm {
+        margin: 7% 26% 0 29%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    p, label {
+        font-size: 1.0rem;
+    }
+
     .footerFlexbox {
         font-size: 15px;
     }
@@ -295,7 +329,11 @@ input {
 
     .deskTopMenuFlexContainer li {
         font-size: 2.6rem;
-            }
+    }
+
+    #textAndForm {
+        margin: 7% 26% 0 31%;
+    }
 
 }
 
@@ -307,7 +345,11 @@ input {
 
     .deskTopMenuFlexContainer li {
         font-size: 2.7rem;
-            }
+    }
+
+    .footerFlexbox {
+        font-size: 14px;
+    }
 
 }
 
@@ -317,14 +359,37 @@ input {
     }
 
     .deskTopMenuFlexContainer li {
-        font-size: 2.9rem;
-            }
+        font-size: 2.8rem;
+    }
+
+    #textAndForm {
+        margin: 6% 26% 0 34%;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .deskTopMenuFlexContainer li {
         font-size: 3.1rem;
-            }
+    }
+ 
+}
+
+@media screen and (min-width: 1250px) {
+    #textAndForm {
+        margin: 5% 26% 0 34%;
+    }
+
+    .contactImage {
+        width: 63%;
+    }
+
+    #MohaveMoundCactus {
+        width: 66%;
+    }
+
+    #SeventeenHoleBridge {
+        width: 66%;
+    }
 }
 
 @media screen and (min-width: 1300px) {
@@ -332,9 +397,22 @@ input {
         font-size: 1.9rem;
     }
     
-    .deskTopMenuFlexContainer li {
-        font-size: 3.2rem;
-            }
+    #textAndForm {
+        margin: 4% 26% 0 35%;
+    }
+
+    .contactImage {
+        width: 61%;
+    }
+
+    #MohaveMoundCactus {
+        width: 64%;
+    }
+
+    #SeventeenHoleBridge {
+        width: 64%;
+    }
+
 }
 
 @media screen and (min-width: 1380px) {
@@ -343,6 +421,20 @@ input {
     }
     
     .deskTopMenuFlexContainer li {
-        font-size: 3.5rem;
-            }
+        font-size: 3.3rem;
+    }
+
+    .contactImage {
+        width: 58%;
+    }
+        
+
+    #MohaveMoundCactus {
+        width: 61%;
+    }
+
+    #SeventeenHoleBridge {
+        width: 61%;
+        
+    }
 }
