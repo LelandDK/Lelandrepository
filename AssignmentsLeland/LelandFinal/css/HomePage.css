@@ -23,8 +23,8 @@ a {  /*get rid of underline on all links on page */
 
 .logo {
         width: 155%;
-        margin-top: 6%;
-        margin-left: 7%
+        margin-top: 10%;
+        margin-left: 8%
 }
     
 .headerText {
@@ -38,6 +38,7 @@ a {  /*get rid of underline on all links on page */
     font-size: 1.5rem;
     font-weight:bolder;
     grid-column: 6/ 7;
+    margin-top: 10%;
 
 }
 
