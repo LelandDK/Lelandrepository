@@ -29,8 +29,15 @@ img {
     
 }
 
-p {
+h1, p {
     font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    justify-self: center;
+}
+
+p {
     padding: 0 3% 15% 5%;
 }
 
