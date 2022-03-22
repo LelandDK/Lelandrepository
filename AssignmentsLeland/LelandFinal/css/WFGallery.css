@@ -92,24 +92,20 @@ a {
 
 /*Main */
 main {
-    font-family:Arial, Helvetica, sans-serif;
-    margin-top: 7%;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
+.imageLink {
+    display:block; /*Images by default are in-line */
+    place-self: center;
+    width: 50%;
 }
 
-.row {
-    flex: 60%;
-    margin: 5%;
-}
-
-.mainImages {
-    border: 8px solid white;
+.imageLink img {
+    width: 100%; /*sets image width at 100% of container size, which causes the image to be responsive */
+    margin-top: 15%;
+    border: 8px solid white; 
 }
 
 /*Footer */
@@ -146,10 +142,6 @@ main {
         margin-top: 6%;
     }
     
-    .mainImages {
-        width: 105%;
-    }
-
     .footerFlexbox {
         font-size: 12px;
     }
@@ -171,36 +163,10 @@ main {
         margin-top: 5%;
     }
 
-    .mainImages {
-        width: 110%;
-    }
-
-   .footerFlexbox {
+    .footerFlexbox {
         font-size: 16px;
     }
 }
-
-/* 620px */
-@media screen and (min-width:620px) {
-    .mainImages {
-        width: 112%;
-    }
-}
-
-/* 670px */
-@media screen and (min-width:670px) {
-    .mainImages {
-        width: 115%;
-    }
-}
-
-/* 700px */
-@media screen and (min-width:700px) {
-    .mainImages {
-        width: 120%;
-    }
-}
-
 
 /* 768 px */
 @media screen and (min-width:768px) {
@@ -212,10 +178,6 @@ main {
         font-size: 3.0rem;
     }
 
-    .mainImages {
-        width: 125%;
-    }
-    
     .footerFlexbox {
         font-size: 20px;
     }
@@ -225,36 +187,6 @@ main {
 @media screen and (min-width: 800px) {
     main {
         margin-top: 4%;
-    }
-
-    .mainImages {
-        width: 130%;
-    }
-
-}
-
-/* 840px */
-@media screen and (min-width:840px) {
-    .mainImages {
-        width: 133%;
-    }
-}
-
-/* 900px */
-@media screen and (min-width:900px) {
-    main {
-        margin-top: 3%;
-    }
-
-    .mainImages {
-        width: 130%;
-    }  
-}
-
-/* 950px */
-@media screen and (min-width:950px) {
-    .mainImages {
-        width: 134%;
     }
 }
 
