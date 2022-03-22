@@ -179,6 +179,10 @@ main {
         font-size: 3.0rem;
     }
  
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    
     .footerFlexbox {
         font-size: 20px;
     }
@@ -243,6 +247,11 @@ main {
         width: 105%;
     }
 
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 3%;
+    }
+
     
     .footerFlexbox {
         font-size: 15px;
@@ -292,6 +301,10 @@ main {
     .deskTopMenuFlexContainer li {
         font-size: 3.1rem;
     }
+
+    main {
+        margin-top: 2%;
+    }
 }
 
 /* 1300px */
@@ -310,5 +323,9 @@ main {
     
     .deskTopMenuFlexContainer li {
         font-size: 3.5rem;
-            }
+    }
+    
+    main {
+        margin-top: 1%;
+    }
 }

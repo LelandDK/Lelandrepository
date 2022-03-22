@@ -1,0 +1,332 @@
+body {
+    background-image: url(../Logos/MountainSky3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-color:#EBF4FE;
+}
+
+a {  /*get rid of underline on all links on page */
+    text-decoration: none;
+}
+
+/*Header*/
+
+/*Background image and "Menu" Link */
+.logoMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+.logo {
+    width: 155%;
+    margin-top: 10%;
+    margin-left: 8%
+}
+    
+.headerText {
+    font-family: "caveat";
+    grid-column: 2/ 5;
+    margin-top: 15%;
+}
+    
+
+.mobileMenuLink {
+    font-family: "caveat";
+    font-size: 1.5rem;
+    font-weight:bolder;
+    grid-column: 6/ 7;
+    margin-top: 10%;
+
+}
+
+/* Desktop Menu */
+.deskTopMenu {
+    display: none;
+}
+
+/* Slid-out menu*/
+
+.mobileNavHide { /*div container, which which contains two grid-rows: one for the x-out and one for the links */
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #d9e6f2; /*Alternative color #ecf2f9 */
+    top: 0; /*positions container at top to cover the body's background */
+    left: 0; /*positions container to the left to cover body's background */
+    position: fixed; /*This takes the div container outside of the normal flow.*/
+    width: 0; /*This width is what causes the div to be hidden */
+    overflow: hidden; /*This makes sure that the content (below) responds the same as the container.  Without it, the content would continue to show whether or not the container (with background color) is shown or hidden. */
+    transition: all 0.5s ease-in;
+      
+        
+}
+/*This is the x-out targeted by location and not by class name */
+.mobileNavHide a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    place-self: end; 
+    margin-top: 10px;
+    margin-right: 15px;
+    
+}
+
+.mobileNavHide-Links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /*This placed links into the top four rows in the six row layout, thereby decreasing space between them and increasing space between all of them and the bottom of container */
+    list-style: none; 
+    padding-left: 0;
+    height: 100vh; /*The nav has two rows (the x and the links). This addition adds height to the links only, so the x stays near the top of the page.  100vh makes the height the same as the viewport's height */
+    
+}
+
+.mobileNavHide-Links li {
+    place-self: center;
+    
+}
+
+.mobileNavShow { /*Use JS to add this to class to mobileNavHide's element when user clicks "menu" */
+    width: 100vw;
+}
+
+/*Main */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.imageLink {
+    display:block; /*Images by default are in-line */
+    place-self: center;
+    width: 50%;
+}
+
+.imageLink img {
+    width: 100%; /*sets image width at 100% of container size, which causes the image to be responsive */
+    margin-top: 15%;
+    border: 8px solid white;
+}
+
+
+/*Footer */
+.footerFlexbox {
+    display: flex;
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+
+.footerFlexbox li {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* Media Queries */
+
+/* 479px */
+
+@media screen and (min-width:479px) {
+    .headerText {
+        font-size: 1.8em;
+    }
+
+    .mobileMenuLink {
+        font-size: 1.8rem;
+    }
+
+    main {
+        margin-top: 6%;
+    }
+    
+    .footerFlexbox {
+        font-size: 12px;
+    }
+   
+} 
+
+/* 570px */
+
+@media screen and (min-width:570px) {
+    .headerText {
+        font-size: 2.3rem;
+    }
+
+    .mobileMenuLink {
+        font-size: 2.3rem;
+    }
+
+    main {
+        margin-top: 5%;
+    }
+
+    .footerFlexbox {
+        font-size: 16px;
+    }
+}
+
+/* 768 px */
+@media screen and (min-width:768px) {
+    .headerText {
+        font-size: 3.0rem;
+    }
+
+    .mobileMenuLink {
+        font-size: 3.0rem;
+    }
+
+    
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .footerFlexbox {
+        font-size: 20px;
+    }
+}
+
+/* 800px */
+@media screen and (min-width: 800px) {
+    main {
+        margin-top: 4%;
+    }
+}
+
+/* 992px */
+@media screen and (min-width: 992px) {
+
+    .mobileMenuLink {
+        display: none;
+    }
+
+    .deskTopMenu {
+        display: block;
+        grid-row: 1;
+        grid-column: 2/ 7;
+        align-self: center;
+        margin-bottom: 3%;
+        margin-left: 10%;
+    }
+
+    .deskTopMenuFlexContainer {
+        display: flex;
+        list-style: none;
+        position: relative;
+        z-index: 3;
+        gap: 8%;
+                
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-family: "caveat";
+        font-size: 2.5rem;
+        font-weight:bold; 
+    }
+
+    .headerText {
+        position: relative;
+        z-index: 2; 
+        grid-row: 1;
+        grid-column: 1/ 3;
+        font-size: 1.4rem;
+        align-self: end;
+        margin-top: 44%;
+        margin-left: 6%;
+         
+        
+    }
+
+    .logo {
+        grid-row: 1;
+        grid-column: 1/ 2;
+        margin-top: 5%;
+        margin-left: 28%;
+        width: 105%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 3%;
+    }
+    
+    .footerFlexbox {
+        font-size: 15px;
+    }
+
+}
+
+/* 1050px */
+@media screen and (min-width: 1050px) {
+    .headerText {
+        font-size: 1.5rem;
+        
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-size: 2.6rem;
+    }
+
+}
+
+/* 1090 px */
+@media screen and (min-width: 1090px) {
+    .headerText {
+        font-size: 1.6rem;
+        
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-size: 2.7rem;
+    }
+
+}
+
+/* 1160 px */
+@media screen and (min-width: 1160px) {
+    .headerText {
+        font-size: 1.7rem;
+    }
+
+    .deskTopMenuFlexContainer li {
+        font-size: 2.8rem;
+    }
+}
+
+/* 1200px */
+@media screen and (min-width: 1200px) {
+    .deskTopMenuFlexContainer li {
+        font-size: 3.1rem;
+    }
+
+    main {
+        margin-top: 2%;
+    }
+}
+
+/* 1300px */
+@media screen and (min-width: 1300px) {
+    .headerText {
+        font-size: 1.9rem;
+    }
+    
+}
+
+/* 1380 px */
+@media screen and (min-width: 1380px) {
+    .headerText {
+        font-size: 2.0rem;
+    }
+    
+    .deskTopMenuFlexContainer li {
+        font-size: 3.5rem;
+    }
+    
+    main {
+        margin-top: 1%;
+    }        
+}
