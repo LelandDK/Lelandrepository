@@ -71,10 +71,6 @@ p {
     }
 }
 
-@media screen and (min-width:1200px) {
-    
-}
-
 @media sceen and (min-width: 1350px) {
     p {
         font-size: 22px;
