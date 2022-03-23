@@ -1,9 +1,10 @@
 body {
-    background-image: url(../Logos/MountainSky3.png);
+    
+    background-image: url(../Logos/Bigsky2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
     background-color:#EBF4FE;
+    min-height: 100vh; /*This extends body to cover the entire viewport height */
 }
 
 a {  /*get rid of underline on all links on page */

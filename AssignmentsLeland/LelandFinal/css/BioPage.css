@@ -1,10 +1,10 @@
 body {
     
-    background-image: url(../Logos/MountainSky3.png);
+    background-image: url(../Logos/Bigsky2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
     background-color:#EBF4FE;
+    min-height: 100vh; /*This extends body to cover the entire viewport height */
 }
 
 a {  /*get rid of underline on all links on page */
@@ -124,7 +124,7 @@ h1 {
 }
 
 .bioText {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     }
 
 /*Footer */
@@ -158,11 +158,17 @@ h1 {
         font-size: 1.8rem;
     }
 
-       
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    .bioText {
+        font-size: 1.1rem;
+    }
+
     .footerFlexbox {
         font-size: 12px;
     }
-   
 } 
 
 /* 570px */
@@ -174,14 +180,6 @@ h1 {
 
     .mobileMenuLink {
         font-size: 2.3rem;
-    }
-
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    .bioText {
-        font-size: 1.0rem;
     }
 
     .bioImage {
