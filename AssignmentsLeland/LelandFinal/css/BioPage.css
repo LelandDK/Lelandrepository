@@ -118,10 +118,10 @@ main {
 
 /*Biography Text */
 
-
 h1 {
     font-size: 1.10rem
 }
+
 
 .bioText {
     font-size: 1.0rem;
@@ -209,6 +209,14 @@ h1 {
 }
 
 }
+
+/* Max width 700px */
+@media screen and (max-width: 700px) {
+    #bioTextContainer {
+        background-color: #ced6dd;
+    }
+}
+
 
 /* 768 px */
 @media screen and (min-width:768px) {
