@@ -22,7 +22,7 @@ article {
     grid-template-columns: 1fr;
 }
 
-img {
+.horizontal, .vertical {
     display: block;
     width: 90%;
     margin: 10% 0 3% 5%;
@@ -47,8 +47,19 @@ p {
 
 /* Media Queries */
 
+@media screen and (min-width: 470px) {
+    .vertical {
+        width: 83%;
+        margin: 6% 0 3% 9%;
+    }
+
+    p {
+        padding: 0 0 15% 10%
+    }
+}
+    
 @media screen and (min-width:479px) {
-    img {
+    .horizontal {
         margin-top: 8%;
     }
     
@@ -57,45 +68,206 @@ p {
     }
 }
 
+@media screen and (min-width:500px) {
+    .vertical {
+        width: 73%;
+        margin: 4% 0 3% 14%;
+    }
+
+}
+
 @media screen and (min-width:570px) {
+    h1 {
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+    
     p {
         font-size: 19px;
     }
 }
 
-@media screen and (min-width:768px) {
-    img {
-        margin-top: 5%;
+@media screen and (min-width: 578px) {
+    .vertical {
+        width: 65%;
+        margin: 3% 0 3% 19%;
+    }
+   
+}
+
+@media screen and (min-width: 618px) {
+    .vertical {
+        width: 60%;
+        margin: 3% 0 3% 21%;
+    }
+    
+}
+
+@media screen and (min-width: 710px) {
+    .vertical {
+        width: 55%;
+        margin-left: 23%;
+    }
+}
+
+@media screen and (min-width:775px) {
+    .vertical {
+        width: 50%;
+        margin-left: 26%;
     }
 }
 
 @media screen and (min-width:850px){
+    h1 {
+        margin-top: 1%
+    }
+
+    .vertical {
+        width: 47%;
+        margin-left: 27%;
+    }
+
+    .horizontal {
+        width: 85%;
+        margin-left: 7%;
+    }
+    
     p {
         font-size: 20px;
+    }
+
+    
+}
+
+@media screen and (min-width:900px) {
+    .vertical {
+        width: 44%;
+        margin-left: 29%;
     }
 }
 
 
 @media screen and (min-width: 992px) {
+    a {
+        margin-top: 3%;
+    }
+    
+    .vertical {
+        width: 42%;
+        margin-left: 29%;
+    }
+    
     p {
         font-size: 21px;
     }
 }
 
-@media sceen and (min-width: 1350px) {
+@media screen and (min-width: 1050px) {
+    .vertical {
+        width: 39%;
+        margin-left: 31%;
+    }
+
+    .horizontal {
+        margin-top: 5%;
+        width: 82%;
+        margin-left: 9%;
+    }
+
+    p {
+        padding-left: 8%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (min-width:1130px) {
+    .horizontal {
+        margin-top: 4%;
+        width: 80%;
+        margin-left: 11%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .vertical {
+        margin-top: 2%;
+    }
+
+    .horizontal {
+        margin-top: 3%;
+        width: 79%;
+        margin-left: 12%;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    a {
+        margin-top: 2%;
+    }
+
+    .horizontal {
+        margin-top: 2%;
+        width: 75%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    a {
+        margin-top: 2%;
+    }
+    
+    .vertical {
+        margin-top: 1%;
+    }
+
     p {
         font-size: 22px;
     }
 }
 
-@media screen and (min-width: 1500px) {
-    img {
-        margin-top: 4%;
+@media screen and (min-width:1400px) {
+    .vertical {
+        width: 38%;
     }
 
+    .horizontal {
+        width: 72%;
+        margin-left: 17%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .vertical {
+        width: 36%;
+        margin-left: 33%;
+    }
+
+    .horizontal {
+        margin-top: 1%;
+        width: 70%;
+        margin-left: 18%;
+    }
+    
     p {
         font-size: 23px;
     }
+}
+
+@media screen and (min-width: 1600px) {
+    .vertical {
+        width: 34%;
+        margin-left: 34%;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
 }
 
 

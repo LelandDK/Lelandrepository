@@ -295,7 +295,7 @@ h1 {
     .articleContainer {
         margin: 0;
         display: grid;
-        grid-template-columns: 22% 26% 30% 22%;
+        grid-template-columns: 23% 26% 28% 23%;
         grid-template-rows: 15% 85%;
 
     }
@@ -358,6 +358,12 @@ h1 {
    
 }
 
+@media screen and (min-width: 1057px) {
+    .articleContainer {
+        grid-template-columns: 24% 26% 26% 24%;
+    }
+}
+
 @media screen and (min-width: 1090px) {
     .headerText {
         font-size: 1.6rem;
@@ -383,11 +389,6 @@ h1 {
         font-size: 2.8rem;
     }
 
-    .articleContainer {
-        grid-template-columns: 23% 25% 29% 23%;
-     
-    }
-
     .bioImage {
         width: 90%;           
     }
@@ -399,30 +400,28 @@ h1 {
     .deskTopMenuFlexContainer li {
         font-size: 3.1rem;
     }
-
-    .articleContainer {
-        grid-template-columns: 24% 24% 28% 24%;
-    }
-    
+   
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1235px) {
     .articleContainer {
-        grid-template-columns: 25% 23% 27% 25%;
-     }
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
 
-     
+@media screen and (min-width: 1284px) {
+    
 }
 
 @media screen and (min-width: 1300px) {
     .headerText {
         font-size: 1.9rem;
     }
-    
+
     .articleContainer {
-        grid-template-columns: 29% 22% 26% 23%;
-     }
-  
+        grid-template-columns: 26% 24% 24% 26%;
+    }
+     
 }
 
 @media screen and (min-width: 1360px) {
@@ -442,11 +441,31 @@ h1 {
     }
 
     .articleContainer {
-        grid-template-columns: 31% 20% 26% 23%;
+        grid-template-columns: 27% 23% 23% 27%;
     }
 
     .bioImage {
         width: 95%;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    .articleContainer {
+        grid-template-columns: 28% 22% 22% 28%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .articleContainer {
+        grid-template-columns: 29% 21% 21% 29%;
+    }
+}
+
+@media screen and (min-width: 1575px) {
+    .articleContainer {
+        grid-template-columns: 31% 19% 19% 31%;
+    }
+}
+
+
 
