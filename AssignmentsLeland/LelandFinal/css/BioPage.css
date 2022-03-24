@@ -467,5 +467,17 @@ h1 {
     }
 }
 
+@media screen and (min-width:1650px) {
+    .articleContainer {
+        grid-template-columns: 32% 18% 18% 32%;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .articleContainer {
+        grid-template-columns: 32% 17% 17% 32%;
+    }
+}
+
 
 
