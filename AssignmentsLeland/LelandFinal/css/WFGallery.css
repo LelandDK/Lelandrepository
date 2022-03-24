@@ -14,7 +14,7 @@ a {
 
 /*Header*/
 
-/*Background image and "Menu" Link */
+/*Logo and "Menu" Link */
 .logoMenu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

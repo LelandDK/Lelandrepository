@@ -13,7 +13,7 @@ a {  /*get rid of underline on all links on page */
 
 /*Header*/
 
-/*Background image and "Menu" Link */
+/*Logo and "Menu" Link */
 .logoMenu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
